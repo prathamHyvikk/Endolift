@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accets/style.css">
+    <link rel="stylesheet" href="accets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+</head>
+
+<style>
+    .accordion-button:not(.collapsed) {
+        background-color: #000 !important;
+        color: #fff;
+    }
+
+    .accordion-button:not(.collapsed)::after {
+        background-image: url('accets/images/Minus-icon.png');
+    }
+
+    .accordion-button::after {
+        background-image: url('accets/images/Plus-icon.png');
+    }
+</style>
+
+<body>
+
+    <!-- navbar -->
+
+    <!-- mask -->
+    <div class="mask"></div>
+    <!-- mask end -->
+
+    <!-- side nav -->
+    <div class="side-nav d-flex  justify-content-center">
+        <i class="fa-solid fa-circle-chevron-right position-absolute top-50 pointer fs-3 bg-main rounded-circle py-1 px-1 side-nav-close"
+            style="left: -13px;"></i>
+
+        <ul class="d-flex flex-column gap-3 p-0 w-100 p-4">
+            <li class="list-group text-black p-2 fw-semibold"><a href="Treatments.html">Treatments</a></li>
+            <li class="list-group text-black p-2 fw-semibold"><a href="Trainings.html">Trainings</a></li>
+            <li class="list-group text-black p-2 fw-semibold"><a href="Location.html">Location</a></li>
+            <li class="list-group text-black p-2 fw-semibold"><a href="Book-free.html">Book a free consultation </a></li>
+            <li class="list-group text-black p-2 fw-semibold"><a href="FAQ.html">FAQ</a></li>
+            <li class="list-group text-black p-2 fw-semibold"><a href="Meet-my-team.html">Meet the team</a></li>
+            <li class="list-group text-black p-2 fw-semibold"><a href="blog.html">Blog</a></li>
+        </ul>
+    </div>
+    <!-- side nav end -->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container bg-main py-3 px-4 mx-lg-auto mx-md-auto rounded-2 mt-2 mx-3">
+            <a class="navbar-brand fw-bold" href="Home.html">Endolift</a>
+            <div class="d-flex gap-lg-3 gap-md-2 align-items-center justify-content-end" id="navbarNav">
+
+                <ul class="d-lg-flex d-md-flex d-none gap-lg-4 gap-md-3 align-items-center m-0 p-0">
+                    <li class="list-group">
+                        <a class="fw-bold text-black" aria-current="page" href="Treatments.html">Treatments</a>
+                    </li>
+                    <li class="list-group">
+                        <a class="fw-bold text-black" aria-current="page" href="Trainings.html">Trainings</a>
+                    </li>
+                    <li class="list-group">
+                        <a class=" fw-semibold bg-black rounded-2 text-main px-4 py-2" aria-current="page"
+                            href="Book-free.html">Book a free consultation <i
+                                class="fa-solid ms-2 fa-arrow-right-long"></i></a>
+                    </li>
+                </ul>
+                <li class="list-group">
+                    <i class="fa-solid fa-bars-staggered bg-black text-main pointer p-2 rounded fs-5 side-nav-tog"></i>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+
+    <div class="container">
+        <div class="text-center display-4 fw-bold text-black my-3 banner-image">FAQ</div>
+
+        <div class="text-center banner-text">If the answer to your question is not listed below, please email us at <b>
+                info@endolift.com </b> and <br> we will get
+            back to you as soon as we can!
+        </div>
+    </div>
+
+
+    <section class="py-5">
+        <div class="container">
+
+            <div class="border-bottom border-black mb-3"></div>
+
+            <div class="row align-items-center justify-content-center gap-lg-0 gap-md-0 gap-3">
+                <div class="col-lg-8 col-md-9 FadeUp">
+                    <!-- <div class="row flex-nowrap overflow-x-auto my-4 mx-lg-0 mx-md-0 mx-1 pb-2">
+                        <div class="col-auto">
+                            <button class="btn btn-dark">View all</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn bg-main text-dark fw-semibold">Treatment</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn bg-main text-dark fw-semibold">Results</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn bg-main text-dark fw-semibold">Post-Treatment</button>
+                        </div>
+                    </div> -->
+                    <div>
+                        <div class="accordion" id="accordionExample">
+                            <!-- <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button border-bottom fw-semibold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        What services do you offer at Endolift?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-black text-main">
+                                        We offer Endolift treatments designed to address a variety of cosmetic concerns,
+                                        including skin tightening, facial contouring, localized fat reduction, and
+                                        overall skin rejuvenation.
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button border-bottom fw-semibold py-4" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                                        aria-controls="collapseTwo">
+                                        What is Endolift, and how does it work?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-black text-main">
+                                        Answer: Endolift® is a cutting-edge, minimally invasive laser treatment designed
+                                        to improve skin firmness, reduce excess fat, and enhance overall skin
+                                        appearance. It is an excellent option for those seeking noticeable, long-lasting
+                                        results without the need for surgery.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed border-bottom fw-semibold py-4"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse3"
+                                        aria-expanded="false" aria-controls="collapse3">
+                                        Am I a good candidate for Endolift?
+                                    </button>
+                                </h2>
+                                <div id="collapse3" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-black text-main">
+                                        Answer: You may be a good candidate for Endolift® if you have mild to moderate
+                                        skin laxity on the face, neck, or body that you would like to address. This
+                                        treatment is ideal for individuals seeking noticeable improvements without the
+                                        downtime or risks associated with surgery. It is also suitable for those looking
+                                        to reduce small pockets of stubborn fat, such as under the chin or along the
+                                        jawline. Additionally, if you desire long-lasting results and are in good
+                                        overall health with realistic expectations, Endolift® could be an excellent
+                                        option for you. The best way to confirm your candidacy is by scheduling a
+                                        consultation with a trained professional.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed border-bottom fw-semibold py-4"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"
+                                        aria-expanded="false" aria-controls="collapse4">
+                                        How long does an Endolift session take?
+                                    </button>
+                                </h2>
+                                <div id="collapse4" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-black text-main">
+                                        Answer: An Endolift® session typically takes about 60-90 minutes for a patient,
+                                        depending on the areas being treated and the complexity of the procedure. For
+                                        training sessions, which include detailed instruction and hands-on practice, the
+                                        duration is longer, generally ranging from 4 to 6 hours to ensure comprehensive
+                                        learning and skill development.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed border-bottom fw-semibold py-4"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse5"
+                                        aria-expanded="false" aria-controls="collapse5">
+                                        What is the recovery time after an Endolift treatment?
+                                    </button>
+                                </h2>
+                                <div id="collapse5" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-black text-main">
+                                        Answer: The recovery time for an Endolift® treatment is minimal, as it is a
+                                        non-surgical, minimally invasive procedure. Most patients can return to their
+                                        normal daily activities immediately after the treatment. Some may experience
+                                        mild swelling, redness, or bruising in the treated areas, which typically
+                                        resolves within a few days. Full results gradually become noticeable over the
+                                        following weeks as collagen production increases and the skin continues to
+                                        tighten.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed border-bottom fw-semibold py-4"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse6"
+                                        aria-expanded="false" aria-controls="collapse6">
+                                        Are there any risks or side effects associated with Endolift?
+                                    </button>
+                                </h2>
+                                <div id="collapse6" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body bg-black text-main">
+                                        Answer: Endolift® is a minimally invasive procedure with a low risk of
+                                        complications when performed by a trained professional. However, like any
+                                        medical treatment, it does carry some potential risks and side effects. Common
+                                        side effects may include mild redness, swelling, bruising, or slight tenderness
+                                        in the treated area.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-main">
+        <div class="container py-5 px-lg-2 px-md-2 px-4">
+            <div class="row">
+                <div class="col-lg-3 col-md-10 mb-lg-0 mb-4">
+                    <div class="fw-bold fs-2 text-uppercase"><a href="Home.html">Endolift</a></div>
+                    <div>
+                        <i class="fa-brands fs-4 p-2 rounded-circle border fa-facebook"></i>
+                        <i class="fa-brands fs-4 p-2 rounded-circle border fa-square-instagram"></i>
+                        <i class="fa-brands fs-4 p-2 rounded-circle border fa-square-twitter"></i>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-3 col-md-4 mb-lg-0 mb-4">
+                    <div class="fw-bold fs-5 mb-3 text-uppercase">TREATMENTS</div>
+                    <ul class="list-unstyled">
+                        <li class="my-2 fw-semibold"><a href="Treatments-detail1.html">Endolift Laser Skin Tightening
+                                Procedure</a></li>
+                        <li class="my-2 fw-semibold"><a href="Treatements-detail2.html">Under Chin Reduction
+                                Endolift</a></li>
+                        <li class="my-2 fw-semibold"><a href="Treatements-detail3.html">Mandibular Contour
+                                (Endolift)</a></li>
+                        <li class="my-2 fw-semibold"><a href="Treatements-detail4.html">Neck Endolift</a></li>
+                        <li class="my-2 fw-semibold"><a href="Treatements-detail5.html">Tummy Skin Tightening</a></li>
+                        <li class="my-2 fw-semibold"><a href="Treatements-detail6.html">Lower Eyelid Endolift</a></li>
+                        <li class="my-2 fw-semibold"><a href="Treatements-detail7.html">Under Arm Endolift</a></li>
+                        <li class="my-2 fw-semibold"><a href="Treatements-detail8.html">Lower Mid Face Endolift</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-lg-0 mb-4">
+                    <div class="fw-bold fs-5 mb-3 text-uppercase">LEARN</div>
+
+                    <ul class="list-unstyled">
+                        <li class="my-2 fw-semibold"><a href="FAQ.html">FAQ</a></li>
+                        <li class="my-2 fw-semibold"><a href="Trainings.html">Trainings</a></li>
+                        <li class="my-2 fw-semibold"><a href="Location.html">Location</a></li>
+                        <li class="my-2 fw-semibold"><a href="Meet-my-team.html">Meet the team</a></li>
+                        <li class="my-2 fw-semibold"><a href="blog.html">Blog</a></li>
+                        <li class="my-2 fw-semibold"><a href="Book-free.html">Book a free consultation</a></li>
+                    </ul>
+                </div>
+                 <div class="col-lg-3 col-md-4 mb-lg-0">
+                    <div class="fw-bold fs-5 mb-3 text-uppercase">Newsletter</div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="enter-email" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header border-0">
+                                    <button type="button" class="btn-close position-absolute end-0 mt-4 mx-3"
+                                        data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="text-center">
+                                        <img src="accets/images/Thank you.png" width="100" alt="">
+                                        <div class="fs-3 fw-bold my-4 lh-1">Welcome to the Endolift Community</div>
+                                        <div class="my-2">
+                                            Thank you for subscribing to our newsletter. We're thrilled to have you on
+                                            board and excited to share the latest news, exclusive offers, and expert
+                                            tips to help you achieve your wellness and aesthetic goals.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex align-items-center bg-black px-2 py-1 rounded-2">
+                        <input type="text" class="enter-email text-main form-control bg-transparent border-0"
+                            placeholder="Enter your email address">
+                        <i class="ms-2 fa-regular fa-paper-plane text-main pointer" data-bs-toggle="modal"
+                            data-bs-target="#enter-email"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class=" bg-main">
+            <div class="py-4 container fw-semibold border-top border-dark text-center">
+                © 2024 Quick N Easy. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="accets/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="accets/GSAP.js"></script>
+
+</body>
+
+</html>

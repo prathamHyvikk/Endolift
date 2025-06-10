@@ -1,0 +1,616 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  min-width: 360px;
+  font-family: sans-serif;
+  scroll-behavior: none;
+  overflow-x: hidden;
+}
+
+/* may changes start */
+:root {
+  --main-bg: #f4e6e2;
+  --fancy-glass: rgba(255, 255, 255, 0.4);
+  --fancy-border: rgba(255, 255, 255, 0.2);
+}
+
+/* Backgrounds and Base */
+.bg-main {
+  background: var(--main-bg) !important;
+}
+
+.mask {
+  width: 100%;
+  height: 100vh;
+  background: #000000cc;
+  position: fixed;
+  display: none;
+  z-index: 1;
+}
+.text-main {
+  color: var(--main-bg) !important;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* Navbar Container - Glass Style */
+.fancy-navbar {
+  backdrop-filter: blur(12px);
+  background: var(--fancy-glass);
+  border: 1px solid var(--fancy-border);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Fancy Links */
+.nav-link-fancy {
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.nav-link-fancy::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+.nav-link-fancy:hover::after {
+  width: 100%;
+}
+
+/* Fancy Button */
+.fancy-button {
+  background: #000;
+  color: var(--main-bg);
+  padding: 10px 18px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(to bottom, #fff, var(--main-bg));
+}
+
+.fancy-button:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Side Menu Icon */
+.menu-icon {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* home top banner */
+/* Banner Section Enhancements */
+
+
+.banner-section {
+  padding-top: 40px;  
+}
+
+/* Hero Text Styling */
+.banner-heading {
+  font-size: 2.8rem;
+  line-height: 1.3;
+  color: #222;
+  animation: fadeInUp 0.8s ease;
+}
+
+.banner-subtext {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #555;
+  animation: fadeInUp 1s ease 0.3s;
+  animation-fill-mode: both;
+}
+
+.bookbtn {
+  max-width: 300px;
+  margin-bottom: 20px !important;
+}
+
+/* Image Styling */
+.banner-image-wrapper {
+  text-align: center;
+  animation: fadeInRight 1s ease;
+  padding: 0 !important;
+}
+
+.banner-image {
+  max-width: 100%;
+  height: 540px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  border-radius: 20px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.side-nav {
+  width: 300px;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #fff, var(--main-bg));
+  position: fixed;
+  z-index: 1050;
+  right: -100%;
+  top: 0;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.side-nav.active {
+  right: 0;
+}
+
+.side-nav-close {
+  transition: all 0.3s ease;
+  color: #000;
+}
+
+.side-nav-close:hover {
+  transform: translateX(-3px);
+  color: #333;
+}
+
+.nav-item {
+  transition: all 0.3s ease;
+}
+
+.nav-link {
+  display: block;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+}
+
+.nav-link:hover {
+  background-color: #fff !important;
+  transform: translateX(5px);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #000;
+  transform: scaleY(0);
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+.nav-link:hover::before {
+  transform: scaleY(1);
+}
+.side-nav.active {
+  animation: slideInRight 0.4s ease forwards;
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* may changes end */
+
+.count {
+  right: -50px;
+  top: 0;
+  background-color: transparent;
+  font-size: 50px !important;
+}
+
+.royal-stats-section {
+  background-color: var(--white);
+  position: relative;
+}
+
+.royal-stat-card {
+  z-index: 1;
+  perspective: 1000px;
+}
+
+.stat-circle-border {
+  padding: 2.5rem 1.5rem;
+  border: 2px solid var(--black);
+  border-radius: 50%;
+  background-color: var(--white);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.stat-circle-border::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid var(--main-bg);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.royal-count {
+  color: var(--black);
+  letter-spacing: -3px;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.royal-label {
+  color: var(--black);
+  font-weight: 600;
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+.royal-icon {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  background: var(--black);
+  color: var(--main-bg);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.royal-stat-card:hover .stat-circle-border {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.royal-stat-card:hover .stat-circle-border::before {
+  opacity: 1;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+}
+
+.royal-stat-card:hover .royal-icon {
+  transform: rotate(15deg) scale(1.1);
+  background: var(--main-bg);
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+
+/* Before/After Result section */
+.before-after-section {
+  background-color: var(--white);
+}
+
+.section-header {
+  border-left: 4px solid var(--main-bg);
+}
+
+.accent-line {
+  width: 4px;
+  background-color: var(--black);
+  opacity: 0.8;
+}
+
+.before-after-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  height: 100%;
+}
+
+.before-after-card img {
+  transition: transform 0.4s ease;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.result-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--white);
+  padding: 12px 15px;
+  font-weight: 600;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.before-after-card:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.before-after-card:hover img {
+  transform: scale(1.03);
+}
+
+.before-after-card:hover .result-label {
+  transform: translateY(0);
+}
+
+.gallery-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: var(--white);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.gallery-prev {
+  left: -20px;
+}
+
+.gallery-next {
+  right: -20px;
+}
+
+.gallery-nav:hover {
+  background: var(--black);
+  color: var(--main-bg);
+}
+
+.scroll-bar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tretment Section */
+
+
+.pointer {
+  cursor: pointer;
+}
+
+.enter-email::placeholder {
+  color: #f4e6e2 !important;
+}
+
+.gallery {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.cards {
+  position: relative;
+  width: 14rem;
+  height: 18rem;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cards li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 19rem;
+  height: 18rem;
+  text-align: center;
+  line-height: 18rem;
+  font-size: 2rem;
+  font-family: sans-serif;
+  /* background-color: #9d7cce; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.8rem;
+}
+
+.actions {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.drag-proxy {
+  visibility: hidden;
+  position: absolute;
+}
+
+.Treatments img {
+  height: 230px;
+  min-height: 200px;
+  object-fit: cover;
+}
+
+.scroll-bar-hidden::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+/* meadia query  */
+
+@media (max-width: 576px) {
+  .banner-heading {
+    text-align: center;
+    font-size: 30px !important;
+  }
+  .banner-subtext {
+    text-align: center;
+  }
+  .fancy-button {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    max-width: 80vw !important;
+    margin: auto;
+  }
+
+  .side-nav {
+    width: 85vw;
+  }
+
+  .nav-link {
+    padding: 0.75rem 1rem !important;
+    font-size: 0.95rem;
+  }
+  .stat-circle-border {
+    min-height: 140px;
+    padding: 1.2rem 0.8rem;
+  }
+
+  .royal-count {
+    font-size: 2rem;
+  }
+
+  .royal-label {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-heading {
+    font-size: 2rem;
+  }
+  .banner-subtext {
+    font-size: 1rem;
+  }
+  .banner-image {
+    height: 50vw !important;
+  }
+  .side-nav {
+    width: 70vw;
+  }
+  .royal-stats-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  .stat-circle-border {
+    min-height: 160px;
+    padding: 1.5rem 1rem;
+  }
+
+  .royal-count {
+    font-size: 2.5rem;
+  }
+
+  .royal-label {
+    font-size: 1rem;
+  }
+
+  .royal-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .stat-circle-border {
+    min-height: 180px;
+  }
+
+  .royal-count {
+    font-size: 3rem;
+  }
+
+  .royal-label {
+    font-size: 1.1rem;
+  }
+
+  
+
+ 
+}
+
+@media (max-width: 1199.98px) {
+  .stat-circle-border {
+    min-height: 200px;
+    padding: 2rem 1rem;
+  }
+
+  .royal-count {
+    font-size: 3.5rem;
+  }
+}
