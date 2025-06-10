@@ -444,7 +444,60 @@ ul li {
 }
 
 /* Tretment Section */
+/* Accent Color */
+.text-accent {
+  color: #f4e6e2;
+}
+.btn-accent {
+  background-color: #f4e6e2;
+  color: #000;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.btn-accent:hover {
+  background-color: #fff;
+  color: #000;
+}
 
+/* Card Styling */
+.treatment-alt-card {
+  /* background: linear-gradient(to right, #fff, var(--main-bg)); */
+  background-color: white;
+overflow: hidden;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 10px 24px rgba(244, 230, 226, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 430px !important;
+  
+}
+.treatment-alt-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(244, 230, 226, 0.25);
+}
+
+/* Scrollbar Hidden */
+.scroll-bar-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scroll-bar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.tret_detail{
+  bottom: -115px;
+  width: 100%;
+  height: 215px;
+  transition: all ease-in-out 0.4s;
+}
+
+.treatment-alt-card:hover .tret_detail{
+  bottom: 0;
+  opacity: 1;
+}
 
 .pointer {
   cursor: pointer;
@@ -546,6 +599,14 @@ ul li {
   .royal-label {
     font-size: 0.9rem;
   }
+
+  
+.tret_detail{
+  bottom: -120px;
+}
+.treatment-alt-card{
+  height: 300px !important;
+}
 }
 
 @media (max-width: 768px) {
@@ -584,6 +645,7 @@ ul li {
     height: 35px;
     font-size: 1rem;
   }
+ 
 }
 
 @media (max-width: 991.98px) {
@@ -600,7 +662,13 @@ ul li {
   }
 
   
-
+  
+  .tret_detail{
+    bottom: -120px;
+  }
+  .treatment-alt-card{
+    height: 370px !important;
+  }
  
 }
 
@@ -613,4 +681,12 @@ ul li {
   .royal-count {
     font-size: 3.5rem;
   }
+    
+.tret_detail{
+  bottom: -130px;
+ 
+}
+.treatment-alt-card{
+  height: 320px !important;
+}
 }
