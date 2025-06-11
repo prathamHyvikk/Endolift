@@ -762,117 +762,125 @@
       </div>
     </section>
 
-    <section class="py-5" id="get-a-free">
-      <div class="container d-flex justify-content-center">
-        <div class="bg-white shadow p-5 col-lg-10 rounded-2">
-          <div class="row">
-            <div class="col-lg-7 FadeUp">
-              <div>
-                <div class="fs-3 fw-bold my-3">Book a free consultation</div>
-                <form action="#">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <label for="">First name*</label>
-                      <input
-                        type="text"
-                        class="form-control border-0 bg-light"
-                      />
-                    </div>
-                    <div class="col-lg-6">
-                      <label for="">First name*</label>
-                      <input
-                        type="text"
-                        class="form-control border-0 bg-light"
-                      />
-                    </div>
-                  </div>
-                  <div class="row my-3">
-                    <div class="col-lg-6">
-                      <label for="">Email*</label>
-                      <input
-                        type="text"
-                        class="form-control border-0 bg-light"
-                      />
-                    </div>
-                    <div class="col-lg-6">
-                      <label for="">Phone number*</label>
-                      <input
-                        type="text"
-                        class="form-control border-0 bg-light"
-                      />
-                    </div>
-                  </div>
-                  <label for="">Message*</label>
-                  <textarea
-                    name=""
-                    class="form-control border-0 bg-light"
-                    id=""
-                  ></textarea>
+    <!-- consultation section -->
 
-                  <a
-                    href="Treatements-detail4.html"
-                    class="btn btn-dark fw-semibold my-3"
-                    >Upload Image</a
-                  >
-                  <div class="mb-3">
-                    Accepted file types: jpeg, jpg, png, gif, Max. file size: 16
-                    MB.
+    <section class="consultation-section py-5" id="get-a-free">
+      <div class="container">
+        <div class="consultation-wrapper bg-white shadow-lg rounded-4 overflow-hidden">
+          <div class="row g-0">
+            <!-- Consultation Types (Left Side) -->
+            <div class="col-lg-5 consultation-types">
+              <div class="p-4 p-lg-5 h-100">
+                <h2 class="fs-3 fw-bold mb-4">Types of Consultations</h2>
+                
+                <div class="consultation-cards">
+                  <!-- Card 1 -->
+                  <div class="consultation-card">
+                    <div class="card-number">1</div>
+                    <div class="card-content">
+                      <h3 class="card-title">In Person</h3>
+                      <p class="card-text">Get all your questions answered face to face by an expert Endolift treatment specialist.</p>
+                    </div>
                   </div>
-                  <a href="#" class="btn btn-dark fw-semibold my-3 d-block"
-                    >Upload Image</a
-                  >
-                </form>
+                  
+                  <!-- Card 2 -->
+                  <div class="consultation-card">
+                    <div class="card-number">2</div>
+                    <div class="card-content">
+                      <h3 class="card-title">Phone</h3>
+                      <p class="card-text">Speak with a licensed professional over the phone at your convenience.</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Card 3 -->
+                  <div class="consultation-card">
+                    <div class="card-number">3</div>
+                    <div class="card-content">
+                      <h3 class="card-title">Facetime</h3>
+                      <p class="card-text">Learn more about the Endolift process with a personalized video chat.</p>
+                    </div>
+                  </div>
+                  
+                  <!-- Card 4 -->
+                  <div class="consultation-card">
+                    <div class="card-number">4</div>
+                    <div class="card-content">
+                      <h3 class="card-title">Personalized Plan</h3>
+                      <p class="card-text">Receive a custom quote and treatment plan based on your specific goals.</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div class="col-lg-5 FadeUp">
-              <div>
-                <div class="fs-3 fw-bold my-3">Types of Consultations</div>
-
-                <div class="border-bottom py-3">
-                  <span
-                    class="bg-black rounded-circle lh-1 text-white d-inline-block text-center align-content-center"
-                    style="width: 20px; height: 20px"
-                    >1</span
-                  >
-                  <b>In Person</b> get all your questions answered face to face
-                  by an expert Endolift treatment specialist.
-                </div>
-
-                <div class="border-bottom py-3">
-                  <span
-                    class="bg-black rounded-circle lh-1 text-white d-inline-block text-center align-content-center"
-                    style="width: 20px; height: 20px"
-                    >2</span
-                  >
-                  <b>Phone</b> speak with an license professional over the phone
-                </div>
-
-                <div class="border-bottom py-3">
-                  <span
-                    class="bg-black rounded-circle lh-1 text-white d-inline-block text-center align-content-center"
-                    style="width: 20px; height: 20px"
-                    >3</span
-                  >
-                  <b>Facetime</b> Learn more about the Endolift process with a
-                  Facetime chat
-                </div>
-
-                <div class="border-bottom py-3">
-                  <span
-                    class="bg-black rounded-circle lh-1 text-white d-inline-block text-center align-content-center"
-                    style="width: 20px; height: 20px"
-                    >4</span
-                  >
-                  Receive a <b> quote</b> and <b> treatment plan based</b> on
-                  your specific treatment goals
-                </div>
+            
+            <!-- Consultation Form (Right Side) -->
+            <div class="col-lg-7 consultation-form">
+              <div class="p-4 p-lg-5 h-100">
+                <h2 class="fs-3 fw-bold mb-4">Book a Free Consultation</h2>
+                
+                <form class="needs-validation" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="firstName" class="form-label">First Name*</label>
+                      <input type="text" class="form-control" id="firstName" required>
+                      <div class="invalid-feedback">
+                        Please provide your first name.
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                      <label for="lastName" class="form-label">Last Name*</label>
+                      <input type="text" class="form-control" id="lastName" required>
+                      <div class="invalid-feedback">
+                        Please provide your last name.
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                      <label for="email" class="form-label">Email*</label>
+                      <input type="email" class="form-control" id="email" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid email.
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                      <label for="phone" class="form-label">Phone Number*</label>
+                      <input type="tel" class="form-control" id="phone" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid phone number.
+                      </div>
+                    </div>
+                    
+                    <div class="col-12">
+                      <label for="message" class="form-label">Message*</label>
+                      <textarea class="form-control" id="message" rows="3" required></textarea>
+                      <div class="invalid-feedback">
+                        Please provide a message.
+                      </div>
+                    </div>
+                    
+                    <div class="col-12">
+                      <label for="formFile" class="form-label">Upload Images (Optional)</label>
+                      <input class="form-control" type="file" id="formFile">
+                      <div class="form-text">Accepted file types: jpeg, jpg, png, gif. Max. file size: 16 MB.</div>
+                    </div>
+                    
+                    <div class="col-12 mt-4">
+                      <button class="btn btn-consult btn-lg w-100 py-3 fw-semibold " type="submit">
+                        Book Consultation <i class="fas fa-arrow-right ms-2"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Featured -->
 
     <section class="py-5 text-black">
       <div class="container border-bottom border-black pb-5">

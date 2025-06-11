@@ -594,7 +594,108 @@ ul li {
   
 }
 
+/* Consultation */
+.consultation-section {
+  background-color: #f8f9fa;
+}
 
+.consultation-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.consultation-types {
+  background-color: #f4e6e2;
+  color: #000;
+}
+
+.consultation-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.consultation-card {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.consultation-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.card-number {
+  width: 36px;
+  height: 36px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
+.card-text {
+  color: #555;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.consultation-form {
+  background-color: #fff;
+}
+
+.form-control {
+  padding: 0.75rem 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #000;
+  box-shadow: 0 0 0 0.25rem rgba(0,0,0,0.05);
+}
+
+.form-label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.btn-consult {
+background-image: linear-gradient(to bottom , white , var(--main-bg));
+  border: none;
+  transition: all 0.4s ease-in-out;
+}
+
+
+
+.btn-consult:hover {
+  scale: 1.02;
+}
+
+.btn-dark i {
+  transition: transform 0.3s ease;
+}
+
+.btn-dark:hover i {
+  transform: translateX(3px);
+}
 
 
 
@@ -723,6 +824,26 @@ ul li {
   .benefits-list li {
     font-size: 0.95rem;
   }
+
+  /* consultation */
+  .consultation-card {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .card-number {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+  
+  .form-control {
+    padding: 0.65rem 0.9rem;
+  }
+  
+  .btn-dark {
+    padding: 0.75rem !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -779,6 +900,15 @@ ul li {
   .btn {
     padding: 0.75rem 1.5rem;
   }
+
+  /* consultation */
+  .consultation-card {
+    padding: 1.25rem;
+  }
+  
+  h2.display-5 {
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -812,6 +942,16 @@ ul li {
   
   .gallery-image-container {
     height: 200px;
+  }
+
+  /* consultation */
+  .consultation-wrapper {
+    max-width: 100%;
+  }
+  
+  .consultation-types,
+  .consultation-form {
+    padding: 2rem !important;
   }
 }
 
