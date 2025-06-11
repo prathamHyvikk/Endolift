@@ -166,7 +166,7 @@ ul li {
 .side-nav {
   width: 300px;
   height: 100vh;
-  background-image: linear-gradient(to bottom, #fff, var(--main-bg));
+  background-image: linear-gradient(to bottom, #fff, #f9dad1);
   position: fixed;
   z-index: 1050;
   right: -100%;
@@ -697,7 +697,14 @@ background-image: linear-gradient(to bottom , white , var(--main-bg));
   transform: translateX(3px);
 }
 
+/* Review card */
+.review_card{
+  background-image: linear-gradient(to bottom, white, #f4e6e2);
+}
 
+.slick-dots li button:before{
+  font-size: 11px !important;
+}
 
 
 
