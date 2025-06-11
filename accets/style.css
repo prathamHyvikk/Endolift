@@ -588,6 +588,14 @@ ul li {
   object-fit: cover;
 }
 
+/* FAQ Section */
+.accordion-button:focus {
+  box-shadow: none;
+  
+}
+
+
+
 
 
 
