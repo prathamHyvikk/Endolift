@@ -821,7 +821,7 @@ footer .text-center {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent 60%);
+  background: linear-gradient(to top, rgba(176, 119, 119, 0.7), transparent 60%);
   height: 100%;
   opacity: 0;
   transition: opacity 0.4s ease;
