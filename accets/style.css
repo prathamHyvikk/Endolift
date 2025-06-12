@@ -14,6 +14,8 @@ body {
   overflow-x: hidden;
 }
 
+
+
 /* may changes start */
 :root {
   --main-bg: #f4e6e2;
@@ -786,7 +788,7 @@ footer .modal-body {
 }
 
 footer .text-main {
-  color: #000 !important;
+  color: white !important;
 }
 
 footer .border-top {
