@@ -969,6 +969,21 @@ footer .text-center {
 
 
 
+/* Meet - My - Team  page*/
+.img-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.img-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.object-fit-cover {
+  object-fit: cover;
+  height: 100%;
+}
 
 
 
