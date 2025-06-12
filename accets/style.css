@@ -938,6 +938,8 @@ footer .text-center {
 
 
 /* Training Page */
+
+/* video section */
 .video-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -960,17 +962,10 @@ footer .text-center {
   -webkit-overflow-scrolling: touch;
 }
 
-.review-card {
-  width: 220px;
-  height: 320px;
-  scroll-snap-align: start;
-  background: #fff;
-  transition: transform 0.3s ease;
-}
 
-.review-card:hover {
-  transform: translateY(-5px);
-}
+
+
+
 
 
 
