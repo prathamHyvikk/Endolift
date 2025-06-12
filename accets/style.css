@@ -798,13 +798,10 @@ footer .text-center {
 }
 
 
-.pointer {
-  cursor: pointer;
-}
+/* footer end */
 
-.enter-email::placeholder {
-  color: #f4e6e2 !important;
-}
+
+/* Home page End */
 
 .gallery {
   width: 100%;
@@ -827,36 +824,6 @@ footer .text-center {
   transition: opacity 0.4s ease;
 }
 
-.review-box:hover .review-overlay {
-  opacity: 1;
-}
-
-.object-fit-cover {
-  object-fit: cover;
-}
-
-
-.actions {
-  position: absolute;
-  bottom: 25px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.drag-proxy {
-  visibility: hidden;
-  position: absolute;
-}
-
-.Treatments img {
-  height: 230px;
-  min-height: 200px;
-  object-fit: cover;
-}
-
-.scroll-bar-hidden::-webkit-scrollbar {
-  background-color: transparent;
-}
 
 
 
@@ -963,6 +930,42 @@ footer .text-center {
 }
 
 
+
+/* Location Page */
+
+
+.bg-accent {
+  background-color: black;
+}
+
+.text-accent {
+  color: black;
+}
+
+.bg-soft-primary {
+  background-color: rgba(108, 77, 255, 0.05);
+}
+
+.bg-gradient-map {
+  background: linear-gradient(135deg, rgba(108, 77, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+
+.shadow-lg {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1) !important;
+}
+
+
+.rounded-4 {
+  border-radius: 1rem !important;
+}
+
+.border-white {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
 
 
 
