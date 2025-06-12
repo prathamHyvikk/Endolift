@@ -95,8 +95,13 @@ ul li {
 .menu-icon {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-
+  background: black;
+  
+  border-radius: 10px !important;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.menu-icon::before{
+  color: white !important;
 }
 
 /* home top banner */
