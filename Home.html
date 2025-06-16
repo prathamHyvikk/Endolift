@@ -34,8 +34,9 @@
 
   <style>
     .accordion-button:not(.collapsed) {
-      background-color: var(--main-bg) !important;
-      color: #fff;
+      background-color: #fb7bca !important;
+      color: #fff !important;
+      font-weight: 700 !important;
     }
 
     .accordion-button:not(.collapsed)::after {
@@ -127,12 +128,15 @@
     </div>
     <!-- side nav end -->
 
-    <section class="home-banner-bg" style="background-image: linear-gradient(to bottom ,#f0dbe8 , white);">
+    <section
+      class="home-banner-bg"
+      style="background-image: linear-gradient(to bottom, #f0dbe8, white)"
+    >
       <!-- design start -->
-      <nav class="navbar  navbar-expand-lg" >
+      <nav class="navbar navbar-expand-lg">
         <div
-          class="container bg-white   fancy-navbar py-3 px-4 mt-2 mx-2 mx-sm-auto "
-          style="border-radius: 50px;"
+          class="container bg-white fancy-navbar py-3 px-4 mt-2 mx-2 mx-sm-auto"
+          style="border-radius: 50px"
         >
           <a class="navbar-brand fw-bold text-black" href="Home.html"
             >Endolift</a
@@ -187,11 +191,10 @@
                 >
               </li>
               <li class="list-group">
-                <a href="Book-free.html" class=" fancy-button fw-semibold">
+                <a href="Book-free.html" class="fancy-button fw-semibold">
                   Book a free consultation
                   <i class="fa-solid ms-2 fa-arrow-right-long"></i>
                 </a>
-                
               </li>
             </ul>
 
@@ -251,7 +254,7 @@
       <!-- home top banner end -->
     </section>
     <!-- navbar end -->
-   
+
     <section class="premium-stats">
       <div class="container">
         <div class="stats-grid">
@@ -266,7 +269,7 @@
               <div class="stat-decoration"></div>
             </div>
           </div>
-    
+
           <!-- Monthly Visitors -->
           <div class="stat-item">
             <div class="stat-card">
@@ -278,7 +281,7 @@
               <div class="stat-decoration"></div>
             </div>
           </div>
-    
+
           <!-- Nationwide Reach -->
           <div class="stat-item">
             <div class="stat-card">
@@ -289,7 +292,7 @@
               <div class="stat-decoration"></div>
             </div>
           </div>
-    
+
           <!-- Trusted Partners -->
           <div class="stat-item">
             <div class="stat-card">
@@ -303,13 +306,12 @@
         </div>
       </div>
     </section>
-    
-    
-    
-    
 
     <!-- Before - After section -->
-    <section class="before-after-section py-5 position-relative">
+    <section
+      class="before-after-section py-5 position-relative"
+      style="background-image: linear-gradient(to bottom, #f0dbe8, white)"
+    >
       <div class="container mb-5">
         <!-- Section Header -->
         <div class="section-header mb-4 position-relative ps-3">
@@ -319,8 +321,119 @@
           </p>
         </div>
 
+        <div class="row">
+          <div class="col-3">
+            <div class="image-container position-relative">
+              <img
+                class="image-before slider-image"
+                src="./accets/images/neck-1-before.PNG"
+                alt="Before"
+              />
+              <img
+                class="image-after slider-image"
+                src="./accets/images/neck-1-after.PNG"
+                alt="After"
+              />
+
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                class="slider"
+                aria-label="Slider"
+              />
+              <div class="slider-line" aria-hidden="true"></div>
+              <div class="slider-button" aria-hidden="true">
+                <i class="fas fa-arrows-left-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="image-container position-relative">
+              <img
+                class="image-before slider-image"
+                src="./accets/images/Before Abdomen.png"
+                alt="Before"
+              />
+              <img
+                class="image-after slider-image"
+                src="./accets/images/After Abdomen.png"
+                alt="After"
+              />
+
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                class="slider"
+                aria-label="Slider"
+              />
+              <div class="slider-line" aria-hidden="true"></div>
+              <div class="slider-button" aria-hidden="true">
+                <i class="fas fa-arrows-left-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="image-container position-relative">
+              <img
+                class="image-before slider-image"
+                src="./accets/images/before belly.png"
+                alt="Before"
+              />
+              <img
+                class="image-after slider-image"
+                src="./accets/images/after belly.png"
+                alt="After"
+              />
+
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                class="slider"
+                aria-label="Slider"
+              />
+              <div class="slider-line" aria-hidden="true"></div>
+              <div class="slider-button" aria-hidden="true">
+                <i class="fas fa-arrows-left-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="image-container position-relative">
+              <img
+                class="image-before slider-image"
+                src="./accets/images/neck-1-before.PNG"
+                alt="Before"
+              />
+              <img
+                class="image-after slider-image"
+                src="./accets/images/neck-1-after.PNG"
+                alt="After"
+              />
+
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                class="slider"
+                aria-label="Slider"
+              />
+              <div class="slider-line" aria-hidden="true"></div>
+              <div class="slider-button" aria-hidden="true">
+                <i class="fas fa-arrows-left-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Before/After Gallery -->
-        <div class="gallery-container position-relative">
+        <div class="gallery-container position-relative d-none">
           <div
             class="row flex-nowrap overflow-x-auto overflow-y-hidden scroll-bar-hidden pb-4 gx-4"
           >
@@ -412,7 +525,7 @@
 
                 <a
                   href="Treatements-detail4.html"
-                  class="btn btn-accent bg-main w-auto"
+                  class="fancy-button opacity-100 w-auto"
                 >
                   Learn More <i class="fa-solid fa-arrow-right-long ms-2"></i>
                 </a>
@@ -442,7 +555,7 @@
 
                 <a
                   href="Treatements-detail6.html"
-                  class="btn btn-accent bg-main w-auto"
+                  class="fancy-button opacity-100 w-auto"
                 >
                   Learn More <i class="fa-solid fa-arrow-right-long ms-2"></i>
                 </a>
@@ -471,7 +584,7 @@
 
                 <a
                   href="Treatements-detail3.html"
-                  class="btn btn-accent bg-main w-auto"
+                  class="fancy-button opacity-100 w-auto"
                 >
                   Learn More <i class="fa-solid fa-arrow-right-long ms-2"></i>
                 </a>
@@ -528,7 +641,7 @@
               <div class="cta-wrapper mt-4">
                 <a
                   href="https://pay.withcherry.com/mynuceria?utm_source=practice&m=16434"
-                  class="btn btn-cherry btn-lg fw-semibold px-4 py-3"
+                  class="fancy-button opacity-100 btn-lg fw-semibold px-4 py-3"
                 >
                   Apply With Cherry <i class="fas fa-arrow-right ms-2"></i>
                 </a>
@@ -580,37 +693,404 @@
       </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section
-      class="py-5"
-      style="
-        background-image: linear-gradient(to bottom, white, var(--main-bg));
-      "
-    >
+    <!-- consultation section -->
+
+    <section class="consultation-section py-5" id="get-a-free">
       <div class="container">
-        <div class="row align-items-center gy-5">
+        <div
+          class="consultation-wrapper bg-white shadow-lg rounded-4 overflow-hidden"
+        >
+          <div class="row g-0">
+            <!-- Consultation Types (Left Side) -->
+            <div class="col-lg-7 consultation-types">
+              <div class="p-4 p-lg-5 h-100">
+                <h2 class="fs-3 fw-bold mb-4">Types of Consultations</h2>
+
+                <div class="consultation-cards">
+                  <!-- Card 1 -->
+                  <div class="consultation-card">
+                    <div class="card-number">1</div>
+                    <div class="card-content">
+                      <h3 class="card-title">In Person</h3>
+                      <p class="card-text">
+                        get all your questions answered face to face by an
+                        expert Endolift treatment specialist.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div class="consultation-card">
+                    <div class="card-number">2</div>
+                    <div class="card-content">
+                      <h3 class="card-title">Phone</h3>
+                      <p class="card-text">
+                        speak with an license professional over the phone
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div class="consultation-card">
+                    <div class="card-number">3</div>
+                    <div class="card-content">
+                      <h3 class="card-title">Facetime</h3>
+                      <p class="card-text">
+                        Learn more about the Endolift process with a Facetime
+                        chat
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Card 4 -->
+                  <div class="consultation-card">
+                    <div class="card-number">4</div>
+                    <div class="card-content">
+                      <h3 class="card-title">Personalized Plan</h3>
+                      <p class="card-text">
+                        Receive a custom <b>quote</b> and
+                        <b>treatment plan based </b> on your specific goals.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Consultation Form (Right Side) -->
+            <div class="col-lg-5 consultation-form">
+              <div class="p-4 p-lg-5 h-100">
+                <h2 class="fs-3 fw-bold mb-4">Book a Free Consultation</h2>
+
+                <form class="needs-validation" novalidate>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label for="firstName" class="form-label"
+                        >First Name*</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="firstName"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please provide your first name.
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="lastName" class="form-label"
+                        >Last Name*</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lastName"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please provide your last name.
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="email" class="form-label">Email*</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please provide a valid email.
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="phone" class="form-label"
+                        >Phone Number*</label
+                      >
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="phone"
+                        required
+                      />
+                      <div class="invalid-feedback">
+                        Please provide a valid phone number.
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="message" class="form-label">Message*</label>
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        rows="3"
+                        required
+                      ></textarea>
+                      <div class="invalid-feedback">
+                        Please provide a message.
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="formFile" class="form-label"
+                        >Upload Image</label
+                      >
+                      <input class="form-control" type="file" id="formFile" />
+                      <div class="form-text">
+                        Accepted file types: jpeg, jpg, png, gif. Max. file
+                        size: 16 MB.
+                      </div>
+                    </div>
+
+                    <div class="col-12 mt-4">
+                      <button
+                        class="fancy-button opacity-100  btn-lg w-100 py-3 fw-semibold"
+                        type="submit"
+                      >
+                        Book Consultation
+                        <i class="fas fa-arrow-right ms-2"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured -->
+
+ 
+
+    <section class="py-5 text-black" style="background-color: #232323">
+      <div class="container">
+        <h2 class="fw-bold fs-2 mb-5 text-white text-center">Featured In</h2>
+        <div class="wrapper">
+          <div class="marquee" data-speed="60">
+            <div class="marquee__ctn">
+              <div class="marquee__track">
+                <div class="marquee__item">
+                  <div
+                    class="bg-white shadow-lg rounded-3 p-3 text-center h-100"
+                  >
+                    <img
+                      src="accets/images/image 953.png"
+                      alt="Partner 1"
+                      class="img-fluid"
+                      style="max-height: 50px; object-fit: contain"
+                    />
+                  </div>
+                </div>
+                <div class="marquee__item">
+                  <div
+                    class="bg-white shadow-sm rounded-3 p-3 text-center h-100"
+                  >
+                    <img
+                      src="accets/images/imageasdf23.png"
+                      alt="Partner 2"
+                      class="img-fluid"
+                      style="max-height: 50px; object-fit: contain"
+                    />
+                  </div>
+                </div>
+                <div class="marquee__item">
+                  <div
+                    class="bg-white shadow-sm rounded-3 p-3 text-center h-100"
+                  >
+                    <img
+                      src="accets/images/image765.png"
+                      alt="Partner 3"
+                      class="img-fluid"
+                      style="max-height: 50px; object-fit: contain"
+                    />
+                  </div>
+                </div>
+                <div class="marquee__item">
+                  <div
+                    class="bg-white shadow-sm rounded-3 p-3 text-center h-100"
+                  >
+                    <img
+                      src="accets/images/image9789.png"
+                      alt="Partner 4"
+                      class="img-fluid"
+                      style="max-height: 50px; object-fit: contain"
+                    />
+                  </div>
+                </div>
+                <div class="marquee__item">
+                  <div
+                    class="bg-white shadow-sm rounded-3 p-3 text-center h-100"
+                  >
+                    <img
+                      src="accets/images/image345.png"
+                      alt="Partner 5"
+                      class="img-fluid"
+                      style="max-height: 50px; object-fit: contain"
+                    />
+                  </div>
+                </div>
+                <div class="marquee__item">
+                  <div class="bg-white shadow-sm rounded-3 p-3 text-center h-100">
+                    <img
+                      src="accets/images/image52345.png"
+                      alt="Partner 6"
+                      class="img-fluid"
+                      style="max-height: 50px; object-fit: contain"
+                    />
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Review  -->
+    <section class="py-5">
+      <div class="container">
+        <div class="">
+          <div
+            class="bg-black rounded-pill"
+            style="width: 50px; height: 6px"
+          ></div>
+          <div class="fw-semibold text-black fs-5 mt-2">Reviews</div>
+        </div>
+        <div class="fs-2 text-black fw-bold mb-4">
+          What our patients say about us
+        </div>
+
+        <div class="center">
+          <div class="px-1">
+            <div class="mx-2 p-3 text-center">
+              <div
+                class="review_card rounded-4 shadow-sm p-4 text-center h-100"
+              >
+                <img
+                  src="https://media.istockphoto.com/id/1682296067/photo/happy-studio-portrait-or-professional-man-real-estate-agent-or-asian-businessman-smile-for.jpg?s=612x612&w=0&k=20&c=9zbG2-9fl741fbTWw5fNgcEEe4ll-JegrGlQQ6m54rg="
+                  alt="Reviewer"
+                  class="rounded-circle d-block mx-auto mb-3"
+                  width="70"
+                  height="70"
+                  style="object-fit: cover"
+                />
+                <p class="text-muted small mb-3">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Magni facere tempore eos consectetur? Iusto minima molestiae
+                  molestias suscipit saepe vitae, delectus animi recusandae
+                  voluptate facilis, mollitia ipsa nesciunt iure rem.
+                </p>
+                <h6 class="fw-bold mb-0">John Deo</h6>
+                <div class="text-muted">CEO</div>
+              </div>
+            </div>
+          </div>
+          <div class="px-1">
+            <div class="mx-2 p-3 text-center">
+              <div
+                class="review_card rounded-4 shadow-sm p-4 text-center h-100"
+              >
+                <img
+                  src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg"
+                  alt="Reviewer"
+                  class="rounded-circle d-block mx-auto mb-3"
+                  width="70"
+                  height="70"
+                  style="object-fit: cover"
+                />
+                <p class="text-muted small mb-3">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Magni facere tempore eos consectetur? Iusto minima molestiae
+                  molestias suscipit saepe vitae, delectus animi recusandae
+                  voluptate facilis, mollitia ipsa nesciunt iure rem.
+                </p>
+                <h6 class="fw-bold mb-0">John Deo</h6>
+                <div class="text-muted">CEO</div>
+              </div>
+            </div>
+          </div>
+          <div class="px-1">
+            <div class="mx-2 p-3 text-center">
+              <div
+                class="review_card rounded-4 shadow-sm p-4 text-center h-100"
+              >
+                <img
+                  src="https://t4.ftcdn.net/jpg/06/45/77/79/360_F_645777959_fNnaNoeVO4qxCNPW9MWr3gQlPFSGA9yL.jpg"
+                  alt="Reviewer"
+                  class="rounded-circle d-block mx-auto mb-3"
+                  width="70"
+                  height="70"
+                  style="object-fit: cover"
+                />
+                <p class="text-muted small mb-3">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Magni facere tempore eos consectetur? Iusto minima molestiae
+                  molestias suscipit saepe vitae, delectus animi recusandae
+                  voluptate facilis, mollitia ipsa nesciunt iure rem.
+                </p>
+                <h6 class="fw-bold mb-0">John Deo</h6>
+                <div class="text-muted">CEO</div>
+              </div>
+            </div>
+          </div>
+          <div class="px-1">
+            <div class="mx-2 p-3 text-center">
+              <div
+                class="review_card rounded-4 shadow-sm p-4 text-center h-100"
+              >
+                <img
+                  src="https://www.shutterstock.com/image-photo/happy-mid-aged-business-man-600nw-2307212331.jpg"
+                  alt="Reviewer"
+                  class="rounded-circle d-block mx-auto mb-3"
+                  width="70"
+                  height="70"
+                  style="object-fit: cover"
+                />
+                <p class="text-muted small mb-3">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Magni facere tempore eos consectetur? Iusto minima molestiae
+                  molestias suscipit saepe vitae, delectus animi recusandae
+                  voluptate facilis, mollitia ipsa nesciunt iure rem.
+                </p>
+                <h6 class="fw-bold mb-0">John Deo</h6>
+                <div class="text-muted">CEO</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="drag-proxy"></div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+
+    <section class="py-5 " >
+      <div class="container">
+        <div class="faq">
           <!-- Left Content -->
-          <div class="col-lg-5">
-            <div
-              style="
-                width: 60px;
-                height: 4px;
-                background-color: black;
-                border-radius: 2px;
-              "
-              class="mb-3"
-            ></div>
-            <p class="text-uppercase fw-semibold mb-2" style="color: #555">
+          <div class="w-75 mx-auto d-flex flex-column text-center">
+            
+            <p class="text-uppercase fw-semibold mb-2" style="color: #fb7bca">
               FAQ
             </p>
             <h2 class="fw-bold" style="color: black">
               Questions about Endolift
             </h2>
-            <p style="color: #333; line-height: 1.7" class="mt-3">
+            <p
+              style="color: rgba(44, 43, 43, 0.6); line-height: 1.7"
+              class=""
+            >
               The answers below will help you learn the basics about Endolift®.
               For more details, feel free to contact us with your questions or
               book a free consultation with one of our expert practitioners.
-              <br /><br />
+              <br />
               This innovative, non-surgical treatment is an excellent option for
               those seeking noticeable, long-lasting improvements in skin
               firmness and appearance.
@@ -618,7 +1098,7 @@
           </div>
 
           <!-- Right Accordion -->
-          <div class="col-lg-7">
+          <div class="mx-auto w-75 mt-1">
             <div class="accordion" id="fancyAccordion">
               <!-- Accordion Card -->
               <div
@@ -789,509 +1269,85 @@
       </div>
     </section>
 
-    <!-- consultation section -->
-
-    <section class="consultation-section py-5" id="get-a-free">
-      <div class="container">
-        <div
-          class="consultation-wrapper bg-white shadow-lg rounded-4 overflow-hidden"
-        >
-          <div class="row g-0">
-            <!-- Consultation Types (Left Side) -->
-            <div class="col-lg-5 consultation-types">
-              <div class="p-4 p-lg-5 h-100">
-                <h2 class="fs-3 fw-bold mb-4">Types of Consultations</h2>
-
-                <div class="consultation-cards">
-                  <!-- Card 1 -->
-                  <div class="consultation-card">
-                    <div class="card-number">1</div>
-                    <div class="card-content">
-                      <h3 class="card-title">In Person</h3>
-                      <p class="card-text">
-                        get all your questions answered face to face by an
-                        expert Endolift treatment specialist.
-                      </p>
-                    </div>
-                  </div>
-
-                  <!-- Card 2 -->
-                  <div class="consultation-card">
-                    <div class="card-number">2</div>
-                    <div class="card-content">
-                      <h3 class="card-title">Phone</h3>
-                      <p class="card-text">
-                        speak with an license professional over the phone
-                      </p>
-                    </div>
-                  </div>
-
-                  <!-- Card 3 -->
-                  <div class="consultation-card">
-                    <div class="card-number">3</div>
-                    <div class="card-content">
-                      <h3 class="card-title">Facetime</h3>
-                      <p class="card-text">
-                        Learn more about the Endolift process with a Facetime
-                        chat
-                      </p>
-                    </div>
-                  </div>
-
-                  <!-- Card 4 -->
-                  <div class="consultation-card">
-                    <div class="card-number">4</div>
-                    <div class="card-content">
-                      <h3 class="card-title">Personalized Plan</h3>
-                      <p class="card-text">
-                        Receive a custom <b>quote</b> and
-                        <b>treatment plan based </b> on your specific goals.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Consultation Form (Right Side) -->
-            <div class="col-lg-7 consultation-form">
-              <div class="p-4 p-lg-5 h-100">
-                <h2 class="fs-3 fw-bold mb-4">Book a Free Consultation</h2>
-
-                <form class="needs-validation" novalidate>
-                  <div class="row g-3">
-                    <div class="col-md-6">
-                      <label for="firstName" class="form-label"
-                        >First Name*</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="firstName"
-                        required
-                      />
-                      <div class="invalid-feedback">
-                        Please provide your first name.
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <label for="lastName" class="form-label"
-                        >Last Name*</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="lastName"
-                        required
-                      />
-                      <div class="invalid-feedback">
-                        Please provide your last name.
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <label for="email" class="form-label">Email*</label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        required
-                      />
-                      <div class="invalid-feedback">
-                        Please provide a valid email.
-                      </div>
-                    </div>
-
-                    <div class="col-md-6">
-                      <label for="phone" class="form-label"
-                        >Phone Number*</label
-                      >
-                      <input
-                        type="tel"
-                        class="form-control"
-                        id="phone"
-                        required
-                      />
-                      <div class="invalid-feedback">
-                        Please provide a valid phone number.
-                      </div>
-                    </div>
-
-                    <div class="col-12">
-                      <label for="message" class="form-label">Message*</label>
-                      <textarea
-                        class="form-control"
-                        id="message"
-                        rows="3"
-                        required
-                      ></textarea>
-                      <div class="invalid-feedback">
-                        Please provide a message.
-                      </div>
-                    </div>
-
-                    <div class="col-12">
-                      <label for="formFile" class="form-label"
-                        >Upload Images (Optional)</label
-                      >
-                      <input class="form-control" type="file" id="formFile" />
-                      <div class="form-text">
-                        Accepted file types: jpeg, jpg, png, gif. Max. file
-                        size: 16 MB.
-                      </div>
-                    </div>
-
-                    <div class="col-12 mt-4">
-                      <button
-                        class="btn btn-consult btn-lg w-100 py-3 fw-semibold"
-                        type="submit"
-                      >
-                        Book Consultation
-                        <i class="fas fa-arrow-right ms-2"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Featured -->
-
-    <section class="py-5 text-black" style="background-color: #232323">
-      <div class="container">
-        <h2 class="fw-bold fs-2 mb-5 text-white text-center">Featured In</h2>
-        <div class="row g-4 justify-content-center">
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="bg-white shadow-lg rounded-3 p-3 text-center h-100">
-              <img
-                src="accets/images/image 953.png"
-                alt="Partner 1"
-                class="img-fluid"
-                style="max-height: 50px; object-fit: contain"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="bg-white shadow-sm rounded-3 p-3 text-center h-100">
-              <img
-                src="accets/images/imageasdf23.png"
-                alt="Partner 2"
-                class="img-fluid"
-                style="max-height: 50px; object-fit: contain"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="bg-white shadow-sm rounded-3 p-3 text-center h-100">
-              <img
-                src="accets/images/image765.png"
-                alt="Partner 3"
-                class="img-fluid"
-                style="max-height: 50px; object-fit: contain"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="bg-white shadow-sm rounded-3 p-3 text-center h-100">
-              <img
-                src="accets/images/image9789.png"
-                alt="Partner 4"
-                class="img-fluid"
-                style="max-height: 50px; object-fit: contain"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="bg-white shadow-sm rounded-3 p-3 text-center h-100">
-              <img
-                src="accets/images/image345.png"
-                alt="Partner 5"
-                class="img-fluid"
-                style="max-height: 50px; object-fit: contain"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-            <div class="bg-white shadow-sm rounded-3 p-3 text-center h-100">
-              <img
-                src="accets/images/image52345.png"
-                alt="Partner 6"
-                class="img-fluid"
-                style="max-height: 50px; object-fit: contain"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Review  -->
-    <section class="py-5">
-      <div class="container">
-        <div class="">
-          <div
-            class="bg-black rounded-pill"
-            style="width: 50px; height: 6px"
-          ></div>
-          <div class="fw-semibold text-black fs-5 mt-2">Reviews</div>
-        </div>
-        <div class="fs-2 text-black fw-bold mb-4">
-          What our patients say about us
-        </div>
-
-        <div class="center">
-          <div class="px-1">
-            <div class="mx-2 p-3 text-center">
-              <div
-                class="review_card rounded-4 shadow-sm p-4 text-center h-100"
-              >
-                <img
-                  src="https://media.istockphoto.com/id/1682296067/photo/happy-studio-portrait-or-professional-man-real-estate-agent-or-asian-businessman-smile-for.jpg?s=612x612&w=0&k=20&c=9zbG2-9fl741fbTWw5fNgcEEe4ll-JegrGlQQ6m54rg="
-                  alt="Reviewer"
-                  class="rounded-circle d-block mx-auto mb-3"
-                  width="70"
-                  height="70"
-                  style="object-fit: cover"
-                />
-                <p class="text-muted small mb-3">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Magni facere tempore eos consectetur? Iusto minima molestiae
-                  molestias suscipit saepe vitae, delectus animi recusandae
-                  voluptate facilis, mollitia ipsa nesciunt iure rem.
-                </p>
-                <h6 class="fw-bold mb-0">John Deo</h6>
-                <div class="text-muted">CEO</div>
-              </div>
-            </div>
-          </div>
-          <div class="px-1">
-            <div class="mx-2 p-3 text-center">
-              <div
-                class="review_card rounded-4 shadow-sm p-4 text-center h-100"
-              >
-                <img
-                  src="https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg"
-                  alt="Reviewer"
-                  class="rounded-circle d-block mx-auto mb-3"
-                  width="70"
-                  height="70"
-                  style="object-fit: cover"
-                />
-                <p class="text-muted small mb-3">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Magni facere tempore eos consectetur? Iusto minima molestiae
-                  molestias suscipit saepe vitae, delectus animi recusandae
-                  voluptate facilis, mollitia ipsa nesciunt iure rem.
-                </p>
-                <h6 class="fw-bold mb-0">John Deo</h6>
-                <div class="text-muted">CEO</div>
-              </div>
-            </div>
-          </div>
-          <div class="px-1">
-            <div class="mx-2 p-3 text-center">
-              <div
-                class="review_card rounded-4 shadow-sm p-4 text-center h-100"
-              >
-                <img
-                  src="https://t4.ftcdn.net/jpg/06/45/77/79/360_F_645777959_fNnaNoeVO4qxCNPW9MWr3gQlPFSGA9yL.jpg"
-                  alt="Reviewer"
-                  class="rounded-circle d-block mx-auto mb-3"
-                  width="70"
-                  height="70"
-                  style="object-fit: cover"
-                />
-                <p class="text-muted small mb-3">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Magni facere tempore eos consectetur? Iusto minima molestiae
-                  molestias suscipit saepe vitae, delectus animi recusandae
-                  voluptate facilis, mollitia ipsa nesciunt iure rem.
-                </p>
-                <h6 class="fw-bold mb-0">John Deo</h6>
-                <div class="text-muted">CEO</div>
-              </div>
-            </div>
-          </div>
-          <div class="px-1">
-            <div class="mx-2 p-3 text-center">
-              <div
-                class="review_card rounded-4 shadow-sm p-4 text-center h-100"
-              >
-                <img
-                  src="https://www.shutterstock.com/image-photo/happy-mid-aged-business-man-600nw-2307212331.jpg"
-                  alt="Reviewer"
-                  class="rounded-circle d-block mx-auto mb-3"
-                  width="70"
-                  height="70"
-                  style="object-fit: cover"
-                />
-                <p class="text-muted small mb-3">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Magni facere tempore eos consectetur? Iusto minima molestiae
-                  molestias suscipit saepe vitae, delectus animi recusandae
-                  voluptate facilis, mollitia ipsa nesciunt iure rem.
-                </p>
-                <h6 class="fw-bold mb-0">John Deo</h6>
-                <div class="text-muted">CEO</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="drag-proxy"></div>
-      </div>
-    </section>
-
-    <footer class="bg-main">
-      <div class="container py-5 px-lg-4 px-md-2 px-4">
-        <div class="row">
-          <div class="col-lg-3 col-md-10 mb-lg-0 mb-4">
-            <div class="fw-bold fs-2 text-uppercase">
-              <a href="Home.html">Endolift</a>
-            </div>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nam
-              consequuntur est? Atque tenetur impedit delectus aperiam, hic
-              sequi voluptatem.
-            </p>
-            <div>
-              <i
-                class="fa-brands fs-4 p-2 rounded-circle border fa-facebook"
-              ></i>
-              <i
-                class="fa-brands fs-4 p-2 rounded-circle border fa-square-instagram"
-              ></i>
-              <i
-                class="fa-brands fs-4 p-2 rounded-circle border fa-square-twitter"
-              ></i>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mb-lg-0 mb-4">
-            <div class="fw-bold fs-5 mb-3 text-uppercase">TREATMENTS</div>
-            <ul class="list-unstyled">
-              <li class="my-2 fw-semibold">
-                <a href="Treatments-detail1.html"
-                  >Endolift Laser Skin Tightening Procedure</a
-                >
-              </li>
-              <li class="my-2 fw-semibold">
-                <a href="Treatements-detail2.html"
-                  >Under Chin Reduction Endolift</a
-                >
-              </li>
-              <li class="my-2 fw-semibold">
-                <a href="Treatements-detail3.html"
-                  >Mandibular Contour (Endolift)</a
-                >
-              </li>
-              <li class="my-2 fw-semibold">
-                <a href="Treatements-detail4.html">Neck Endolift</a>
-              </li>
-              <li class="my-2 fw-semibold">
-                <a href="Treatements-detail5.html">Tummy Skin Tightening</a>
-              </li>
-              <li class="my-2 fw-semibold">
-                <a href="Treatements-detail6.html">Lower Eyelid Endolift</a>
-              </li>
-              <li class="my-2 fw-semibold">
-                <a href="Treatements-detail7.html">Under Arm Endolift</a>
-              </li>
-              <li class="my-2 fw-semibold">
-                <a href="Treatements-detail8.html">Lower Mid Face Endolift</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-4 mb-lg-0 mb-4">
-            <div class="fw-bold fs-5 mb-3 text-uppercase">LEARN</div>
-
-            <ul class="list-unstyled">
-              <li class="my-2 fw-semibold"><a href="FAQ.html">FAQ</a></li>
-              <li class="my-2 fw-semibold">
-                <a href="Trainings.html">Trainings</a>
-              </li>
-              <li class="my-2 fw-semibold">
-                <a href="Location.html">Location</a>
-              </li>
-              <li class="my-2 fw-semibold">
-                <a href="Meet-my-team.html">Meet the team</a>
-              </li>
-              <li class="my-2 fw-semibold"><a href="blog.html">Blog</a></li>
-              <li class="my-2 fw-semibold">
-                <a href="Book-free.html">Book a free consultation</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-4 mb-lg-0">
-            <div class="fw-bold fs-5 mb-3 text-uppercase">Newsletter</div>
-
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="enter-email"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header border-0">
-                    <button
-                      type="button"
-                      class="btn-close position-absolute end-0 mt-4 mx-3"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="text-center">
-                      <img
-                        src="accets/images/Thank you.png"
-                        width="100"
-                        alt=""
-                      />
-                      <div class="fs-3 fw-bold my-4 lh-1">
-                        Welcome to the Endolift Community
-                      </div>
-                      <div class="my-2">
-                        Thank you for subscribing to our newsletter. We're
-                        thrilled to have you on board and excited to share the
-                        latest news, exclusive offers, and expert tips to help
-                        you achieve your wellness and aesthetic goals.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center bg-black px-2 py-1 rounded-2">
-              <input
-                type="text"
-                class="enter-email text-main form-control bg-transparent border-0"
-                placeholder="Enter your email address"
-              />
-              <i
-                class="ms-2 fa-regular fa-paper-plane  pointer"
-                data-bs-toggle="modal"
-                data-bs-target="#enter-email"
-              ></i>
-            </div>
-          </div>
+  <footer class=" text-dark pt-5">
+  <div class=" px-4 px-md-5">
+    <div class="row gy-5">
+      <!-- Brand Section -->
+      <div class="col-lg-3 col-md-6">
+        <a href="Home.html" class="fs-3 fw-bold text-uppercase  text-decoration-none d-inline-block mb-3" style="color:#eb2b84;">Endolift</a>
+        <p class="text-muted small">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque tenetur impedit hic sequi voluptatem!
+        </p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="text-dark fs-5"><i class="fa-brands fa-facebook border p-2 rounded-circle"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="fa-brands fa-square-instagram border p-2 rounded-circle"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="fa-brands fa-square-twitter border p-2 rounded-circle"></i></a>
         </div>
       </div>
 
-      <div class="bg-main">
-        <div
-          class="py-4 mt-3 container fw-semibold border-top border-dark text-center"
-        >
-          © 2024 Quick N Easy. All Rights Reserved.
+      <!-- Treatments -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="text-uppercase fw-bold mb-3">Treatments</h6>
+        <ul class="list-unstyled text-muted small">
+          <li class="mb-2"><a href="Treatments-detail1.html" class="text-decoration-none text-muted">Laser Skin Tightening</a></li>
+          <li class="mb-2"><a href="Treatements-detail2.html" class="text-decoration-none text-muted">Under Chin Reduction</a></li>
+          <li class="mb-2"><a href="Treatements-detail3.html" class="text-decoration-none text-muted">Mandibular Contour</a></li>
+          <li class="mb-2"><a href="Treatements-detail4.html" class="text-decoration-none text-muted">Neck Endolift</a></li>
+          <li class="mb-2"><a href="Treatements-detail5.html" class="text-decoration-none text-muted">Tummy Tightening</a></li>
+          <li class="mb-2"><a href="Treatements-detail6.html" class="text-decoration-none text-muted">Lower Eyelid</a></li>
+          <li class="mb-2"><a href="Treatements-detail7.html" class="text-decoration-none text-muted">Under Arm</a></li>
+          <li class="mb-2"><a href="Treatements-detail8.html" class="text-decoration-none text-muted">Lower Mid Face</a></li>
+        </ul>
+      </div>
+
+      <!-- Learn -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="text-uppercase fw-bold mb-3">Learn</h6>
+        <ul class="list-unstyled text-muted small">
+          <li class="mb-2"><a href="FAQ.html" class="text-decoration-none text-muted">FAQ</a></li>
+          <li class="mb-2"><a href="Trainings.html" class="text-decoration-none text-muted">Trainings</a></li>
+          <li class="mb-2"><a href="Location.html" class="text-decoration-none text-muted">Location</a></li>
+          <li class="mb-2"><a href="Meet-my-team.html" class="text-decoration-none text-muted">Meet the Team</a></li>
+          <li class="mb-2"><a href="blog.html" class="text-decoration-none text-muted">Blog</a></li>
+          <li class="mb-2"><a href="Book-free.html" class="text-decoration-none text-muted">Book a Consultation</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="text-uppercase fw-bold mb-3">Newsletter</h6>
+        <p class="text-muted small">Stay updated with the latest tips and exclusive offers.</p>
+
+        <div class="d-flex bg-white border rounded overflow-hidden shadow-sm">
+          <input type="email" class="form-control border-0 bg-transparent px-3" placeholder="Enter your email" />
+          <button class="btn btn-dark px-3" type="button" data-bs-toggle="modal" data-bs-target="#enter-email">
+            <i class="fa-regular fa-paper-plane"></i>
+          </button>
         </div>
       </div>
-    </footer>
+    </div>
+  </div>
+
+  <!-- Subscription Modal -->
+  <div class="modal fade" id="enter-email" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4 text-center">
+        <button type="button" class="btn-close position-absolute end-0 top-0 m-3" data-bs-dismiss="modal"></button>
+        <img src="accets/images/Thank you.png" width="80" alt="" class="mb-3" />
+        <h5 class="fw-bold mb-2">Welcome to the Endolift Community</h5>
+        <p class="small text-muted">
+          Thank you for subscribing to our newsletter. We're excited to share updates, offers, and expert guidance with you.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="border-top mt-5 fw-bold pt-4 pb-3 text-center  text-muted">
+    © 2024 Quick N Easy. All Rights Reserved.
+  </div>
+</footer>
+
 
     <script src="accets/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -1328,7 +1384,6 @@
               slidesToShow: 1,
             },
           },
-         
         ],
       });
     </script>

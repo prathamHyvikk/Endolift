@@ -123,8 +123,6 @@ ul li {
   width: 100%;
 } */
 
-
-
 .fancy-button i {
   transition: transform 0.3s ease-in-out;
 }
@@ -467,127 +465,66 @@ ul li {
 }
 
 /* Before/After Result section */
-.before-after-section {
-  background-color: var(--white);
-}
 
-.section-header {
-  border-left: 4px solid var(--main-bg);
-}
-
-.accent-line {
-  width: 4px;
-  background-color: var(--black);
-  opacity: 0.8;
-}
-
-.before-after-card {
+.image-container {
   position: relative;
-  border-radius: 12px;
+  width: 300px;
+  height: 300px;
+
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  height: 100%;
+  border-radius: 1rem;
+  --position: 50%;
 }
 
-.before-after-card img {
-  transition: transform 0.4s ease;
-  display: block;
+.slider-image {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
+  object-position: left;
 }
 
-.result-label {
+.image-before {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  color: var(--white);
-  padding: 12px 15px;
-  font-weight: 600;
-  transform: translateY(100%);
-  transition: transform 0.3s ease;
+  inset: 0;
+  width: var(--position);
+  filter: grayscale(100%);
+  transition: width 0.3s ease-out;
 }
 
-.before-after-card:hover {
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
-
-.before-after-card:hover img {
-  transform: scale(1.03);
-}
-
-.before-after-card:hover .result-label {
-  transform: translateY(0);
-}
-
-.gallery-nav {
+.slider {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  background: var(--white);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
   cursor: pointer;
   z-index: 10;
-  transition: all 0.3s ease;
 }
 
-.gallery-prev {
-  left: -20px;
+.slider-line {
+  position: absolute;
+  top: 0;
+  left: var(--position);
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: #ffffff;
+  pointer-events: none;
+  z-index: 2;
 }
 
-.gallery-next {
-  right: -20px;
-}
-
-.gallery-nav:hover {
-  background: var(--black);
-  color: var(--main-bg);
-}
-
-.scroll-bar-hidden::-webkit-scrollbar {
-  display: none;
-}
-
-.fade-in {
-  animation: fadeIn 0.8s ease both;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Tretment Section */
-/* Accent Color */
-.text-accent {
-  color: #f0dbe8;
-}
-.btn-accent {
-  background-color: #f0dbe8;
+.slider-button {
+  position: absolute;
+  top: 50%;
+  left: var(--position);
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
   color: #000;
-  font-weight: 600;
-  padding: 8px 20px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-}
-.btn-accent:hover {
-  background-color: #fff;
-  color: #000;
+  padding: 0.6rem;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Card Styling */
@@ -717,7 +654,67 @@ ul li {
   object-fit: cover;
 }
 
+/* Featured In */
+
+/* MARQUEE STUFFS */
+.marquee {
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(
+    var(--mask-direction, to right),
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 10%,
+    hsl(0 0% 0% / 1) 90%,
+    hsl(0 0% 0% / 0)
+  );
+}
+
+.marquee__ctn {
+  display: flex;
+  width: 100%;
+}
+
+.marquee__track {
+  display: flex;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .marquee__ctn {
+    transform: translate3d(0, 0, 0) scale(1);
+    perspective: 1px;
+  }
+}
+
+.marquee__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  width: 120px;
+  margin-inline-end: 3rem;
+
+  img {
+    height: 60px;
+    width: 100%;
+    object-fit: contain;
+    backface-visibility: hidden;
+    filter: brightness(100%);
+  }
+}
+
 /* FAQ Section */
+
+
+.faq{
+  background: #ec6cae30;
+  padding: 10px 0 20px 0;
+  border-radius: 50px;
+  border: 2px solid #eb2b84;
+  box-shadow: #212529;
+}
+
 .accordion-button:focus {
   box-shadow: none;
 }
@@ -795,20 +792,17 @@ ul li {
 }
 
 .form-control:focus {
+  color: var(--bs-body-color);
+
+  border-color: #fe86d3 !important;
   border-color: #000;
-  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 0.25rem rgba(237, 13, 147, 0.08) !important;
 }
 
 .form-label {
   font-weight: 500;
   margin-bottom: 0.5rem;
   color: #333;
-}
-
-.btn-consult {
-  background-image: linear-gradient(to bottom, white, var(--main-bg));
-  border: none;
-  transition: all 0.4s ease-in-out;
 }
 
 .btn-consult:hover {
@@ -823,6 +817,15 @@ ul li {
   transform: translateX(3px);
 }
 
+/* File Upload Container */
+.file-upload-container {
+  margin-bottom: 1.5rem;
+}
+
+
+
+
+
 /* Review card */
 .review_card {
   background-image: linear-gradient(to bottom, white, #f0dbe8);
@@ -833,18 +836,10 @@ ul li {
 }
 
 /* Footer */
-footer.bg-main {
-  background-color: #f8f9fa; /* light background for card feel */
-  color: #212529;
-  padding-top: 3rem;
-  border-top: 1px solid #dee2e6;
-}
 
-footer .container {
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
-  padding: 3rem 2rem;
+footer{
+
+  background-image: linear-gradient(to top, #ec6cae30, transparent);
 }
 
 footer .fw-bold.fs-2 a {
@@ -888,7 +883,7 @@ footer input.enter-email {
 }
 
 footer .fa-paper-plane {
-  background-color: #e9ecef;
+  
   padding: 8px;
   border-radius: 50%;
   cursor: pointer;
