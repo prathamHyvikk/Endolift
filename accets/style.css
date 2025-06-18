@@ -322,17 +322,7 @@ ul li {
   justify-content: center;
 }
 
-/* Enhanced Hover Effect */
-.stat-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
-  border-color: rgba(244, 230, 226, 0.5);
-  background: linear-gradient(
-    135deg,
-    rgba(251, 241, 248, 0.95) 0%,
-    rgba(243, 226, 238, 0.95) 100%
-  );
-}
+
 
 .stat-content {
   position: relative;
@@ -343,11 +333,11 @@ ul li {
 /* Typography */
 .stat-number {
   font-size: clamp(2.5rem, 5vw, 3.5rem);
-  font-weight: 300;
+  font-weight: 600;
   color: #1b1c1c;
   line-height: 1;
   margin-bottom: 0.5rem;
-  font-family: "Georgia", serif;
+
   display: inline-block;
   transition: color 0.3s ease;
 }
@@ -406,18 +396,7 @@ ul li {
 }
 
 /* Hover Effects */
-.stat-card:hover .stat-decoration {
-  opacity: 0.8;
-  transform: scale(1.1);
-}
 
-.stat-card:hover .stat-number {
-  color: #e36090;
-}
-
-.stat-card:hover .stat-label {
-  color: #555;
-}
 
 /* Counting Animation */
 @keyframes fadeIn {
@@ -706,13 +685,15 @@ ul li {
 
 /* FAQ Section */
 
+.faq_container{
+  background-color: #f8f9fa;
+}
 
 .faq{
-  background: #ec6cae30;
+
   padding: 10px 0 20px 0;
-  border-radius: 50px;
-  border: 2px solid #eb2b84;
-  box-shadow: #212529;
+  border-radius: 16px;
+ 
 }
 
 .accordion-button:focus {
@@ -856,6 +837,10 @@ footer a {
 footer a:hover {
   color: #000;
   text-decoration: underline;
+}
+
+.below_logo{
+  width: 75%;
 }
 
 footer .fa-brands {
@@ -1227,6 +1212,11 @@ footer .text-center {
   h2.display-5 {
     font-size: 1.8rem;
   }
+
+  /* footer */
+  .below_logo{
+    width: 90% !important;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -1252,6 +1242,7 @@ footer .text-center {
   .consultation-form {
     padding: 2rem !important;
   }
+  
 }
 
 @media (max-width: 1199.98px) {
