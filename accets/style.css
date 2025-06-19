@@ -207,76 +207,7 @@ ul li {
     transform: translateX(0);
   }
 }
-/* 
-.side-nav {
-  width: 300px;
-  height: 100vh;
-  background-image: linear-gradient(to bottom, #fff, #f9dad1);
-  position: fixed;
-  z-index: 1050;
-  right: 100%;
-  top: 0;
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.05);
-  display: flex;
-  flex-direction: column;
-}
 
-
-
-.side-nav-close {
-  transition: all 0.3s ease;
-  color: #000;
-}
-
-.side-nav-close:hover {
-  transform: translateX(-3px);
-  color: #333;
-}
-
-.nav-item {
-  transition: all 0.3s ease;
-}
-
-.nav-link {
-  display: block;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  position: relative;
-}
-
-.nav-link:hover {
-  background-color: #fff !important;
-  transform: translateX(5px);
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-.nav-link::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 3px;
-  background-color: #000;
-  transform: scaleY(0);
-  transform-origin: center;
-  transition: transform 0.2s ease;
-}
-
-.nav-link:hover::before {
-  transform: scaleY(1);
-}
-.side-nav.active {
-  animation: slideInRight 0.4s ease forwards;
-}
-@keyframes slideInRight {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-} */
 
 /* may changes end */
 /* Base Styles */
@@ -495,9 +426,10 @@ ul li {
   top: 50% !important;
   left: var(--position);
   transform: translate(-50%, -50%);
-  background-color: #ffffff;
+  border: 2px solid white;
+  font-size: 30px;
   color: #000;
-  padding: 0.6rem;
+  padding: 3px 9px;
   border-radius: 50%;
   pointer-events: none;
   z-index: 3;
