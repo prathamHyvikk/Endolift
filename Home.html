@@ -52,14 +52,14 @@
     <!-- navbar -->
 
     <!-- mask -->
-    <div class="mask h-100"></div>
+    <div class="mask  d-md-none  h-100"></div>
     <!-- mask end -->
 
     <!-- side nav -->
-    <div class="side-nav h-100 d-flex flex-column">
+    <div class="side-nav d-md-none h-100 d-flex flex-column">
       <i
-        class="fa-solid bg-white fa-circle-chevron-right position-absolute pointer fs-3 rounded-circle p-2 side-nav-close"
-        style="left: -20px; top: 35px"
+        class="fa-solid menu_close fa-circle-chevron-right position-absolute pointer fs-3 rounded-circle p-2"
+        style="left: -20px; background: #f0dbe8; top: 35px"
       ></i>
 
       <ul class="d-flex flex-column gap-2 p-0 w-100 px-4 py-5 mt-3">
@@ -141,8 +141,12 @@
           <a class="navbar-brand fw-bold text-black" href="Home.html"
             >Endolift</a
           >
+          <i
+            class="fa-solid fa-bars d-block d-md-none side-nav-tog"
+            style="font-size: 25px"
+          ></i>
           <div
-            class="d-flex gap-lg-3 gap-md-2 align-items-center justify-content-end"
+            class="d-flex gap-lg-3 d-none d-md-block gap-md-2 align-items-center justify-content-end"
             id="navbarNav"
           >
             <ul
@@ -191,7 +195,10 @@
                 >
               </li>
               <li class="list-group">
-                <a href="Book-free.html" class="fancy-button fw-semibold">
+                <a
+                  href="Book-free.html"
+                  class="fancy-button d-none d-lg-block fw-semibold"
+                >
                   Book a free consultation
                   <i class="fa-solid ms-2 fa-arrow-right-long"></i>
                 </a>
@@ -230,7 +237,7 @@
 
               <a
                 href="#get-a-free"
-                class="fancy-button opacity-100 bookbtn d-flex align-items-center justify-content-center px-4 py-3 fw-semibold mt-3"
+                class="fancy-button opacity-100 bookbtn d-flex align-items-center justify-content-center px-0 px-sm-4 py-3 fw-semibold mt-3"
               >
                 <span>Book a free consultation</span>
                 <i class="fa-solid ms-3 mt-1 fa-arrow-right-long"></i>
@@ -315,173 +322,122 @@
       <div class="container mb-5">
         <!-- Section Header -->
         <div class="section-header mb-4 position-relative ps-3">
-          <div class="bg-black" style="width: 85px; height: 6px; margin-bottom: 10px; border-radius: 2px"></div>
+          <div
+            class="bg-black"
+            style="
+              width: 85px;
+              height: 6px;
+              margin-bottom: 10px;
+              border-radius: 2px;
+            "
+          ></div>
           <h2 class="fs-1 fw-bold mb-0">Before / After Results</h2>
           <p class="text-muted mt-2">
             Witness the transformation with our exclusive treatments
           </p>
         </div>
 
-        <div class="row">
-          <div class="col-3">
-            <div class="image-container position-relative">
-              <img
-                class="image-before slider-image"
-                src="./accets/images/neck-1-before.PNG"
-                alt="Before"
-              />
-              <img
-                class="image-after slider-image"
-                src="./accets/images/neck-1-after.PNG"
-                alt="After"
-              />
+        <div class="before_slider">
+          <div class="image-container position-relative">
+            <img
+              class="image-before slider-image"
+              src="./accets/images/neck-1-before.PNG"
+              alt="Before"
+            />
+            <img
+              class="image-after slider-image"
+              src="./accets/images/neck-1-after.PNG"
+              alt="After"
+            />
 
-              <input
-                type="range"
-                min="0"
-                max="100"
-                value="50"
-                class="slider"
-                aria-label="Slider"
-              />
-              <div class="slider-line" aria-hidden="true"></div>
-              <div class="slider-button" aria-hidden="true">
-                <i class="fas fa-arrows-left-right"></i>
-              </div>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+              class="slider"
+              aria-label="Slider"
+            />
+            <div class="slider-line" aria-hidden="true"></div>
+            <div class="slider-button" aria-hidden="true">
+              <i class="fas fa-arrows-left-right"></i>
             </div>
           </div>
-          <div class="col-3">
-            <div class="image-container position-relative">
-              <img
-                class="image-before slider-image"
-                src="./accets/images/Before Abdomen.png"
-                alt="Before"
-              />
-              <img
-                class="image-after slider-image"
-                src="./accets/images/After Abdomen.png"
-                alt="After"
-              />
+          <div class="image-container position-relative">
+            <img
+              class="image-before slider-image"
+              src="./accets/images/Before Abdomen.png"
+              alt="Before"
+            />
+            <img
+              class="image-after slider-image"
+              src="./accets/images/After Abdomen.png"
+              alt="After"
+            />
 
-              <input
-                type="range"
-                min="0"
-                max="100"
-                value="50"
-                class="slider"
-                aria-label="Slider"
-              />
-              <div class="slider-line" aria-hidden="true"></div>
-              <div class="slider-button" aria-hidden="true">
-                <i class="fas fa-arrows-left-right"></i>
-              </div>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+              class="slider"
+              aria-label="Slider"
+            />
+            <div class="slider-line" aria-hidden="true"></div>
+            <div class="slider-button" aria-hidden="true">
+              <i class="fas fa-arrows-left-right"></i>
             </div>
           </div>
-          <div class="col-3">
-            <div class="image-container position-relative">
-              <img
-                class="image-before slider-image"
-                src="./accets/images/before belly.png"
-                alt="Before"
-              />
-              <img
-                class="image-after slider-image"
-                src="./accets/images/after belly.png"
-                alt="After"
-              />
+          <div class="image-container position-relative">
+            <img
+              class="image-before slider-image"
+              src="./accets/images/before belly.png"
+              alt="Before"
+            />
+            <img
+              class="image-after slider-image"
+              src="./accets/images/after belly.png"
+              alt="After"
+            />
 
-              <input
-                type="range"
-                min="0"
-                max="100"
-                value="50"
-                class="slider"
-                aria-label="Slider"
-              />
-              <div class="slider-line" aria-hidden="true"></div>
-              <div class="slider-button" aria-hidden="true">
-                <i class="fas fa-arrows-left-right"></i>
-              </div>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+              class="slider"
+              aria-label="Slider"
+            />
+            <div class="slider-line" aria-hidden="true"></div>
+            <div class="slider-button" aria-hidden="true">
+              <i class="fas fa-arrows-left-right"></i>
             </div>
           </div>
-          <div class="col-3">
-            <div class="image-container position-relative">
-              <img
-                class="image-before slider-image"
-                src="./accets/images/neck-1-before.PNG"
-                alt="Before"
-              />
-              <img
-                class="image-after slider-image"
-                src="./accets/images/neck-1-after.PNG"
-                alt="After"
-              />
+          <div class="image-container position-relative">
+            <img
+              class="image-before slider-image"
+              src="./accets/images/neck-1-before.PNG"
+              alt="Before"
+            />
+            <img
+              class="image-after slider-image"
+              src="./accets/images/neck-1-after.PNG"
+              alt="After"
+            />
 
-              <input
-                type="range"
-                min="0"
-                max="100"
-                value="50"
-                class="slider"
-                aria-label="Slider"
-              />
-              <div class="slider-line" aria-hidden="true"></div>
-              <div class="slider-button" aria-hidden="true">
-                <i class="fas fa-arrows-left-right"></i>
-              </div>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+              class="slider"
+              aria-label="Slider"
+            />
+            <div class="slider-line" aria-hidden="true"></div>
+            <div class="slider-button" aria-hidden="true">
+              <i class="fas fa-arrows-left-right"></i>
             </div>
           </div>
-        </div>
-
-        <!-- Before/After Gallery -->
-        <div class="gallery-container position-relative d-none">
-          <div
-            class="row flex-nowrap overflow-x-auto overflow-y-hidden scroll-bar-hidden pb-4 gx-4"
-          >
-            <!-- Item 1 -->
-            <div class="col-lg-4 col-md-4 col-10">
-              <div class="before-after-card">
-                <img
-                  class="img-fluid rounded-3 fade-in"
-                  src="accets/images/Before and. After Face and Neck.png"
-                  alt="Face and Neck Transformation"
-                />
-                <div class="result-label">Face & Neck</div>
-              </div>
-            </div>
-
-            <!-- Item 2 -->
-            <div class="col-lg-4 col-md-4 col-10">
-              <div class="before-after-card">
-                <img
-                  class="img-fluid rounded-3 fade-in"
-                  src="accets/images/Before and After Abdomen(1).png"
-                  alt="Abdomen Transformation"
-                />
-                <div class="result-label">Abdomen</div>
-              </div>
-            </div>
-
-            <!-- Item 3 -->
-            <div class="col-lg-4 col-md-4 col-10">
-              <div class="before-after-card">
-                <img
-                  class="img-fluid rounded-3 fade-in"
-                  src="accets/images/before and after belly fat.png"
-                  alt="Belly Fat Reduction"
-                />
-                <div class="result-label">Belly Fat Reduction</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Navigation Arrows -->
-          <button class="gallery-nav gallery-prev d-none d-md-block">
-            <i class="fas fa-chevron-left"></i>
-          </button>
-          <button class="gallery-nav gallery-next d-none d-md-block">
-            <i class="fas fa-chevron-right"></i>
-          </button>
         </div>
       </div>
     </section>
@@ -606,7 +562,15 @@
             <div class="pe-lg-4">
               <!-- Section Header -->
               <div class="section-header mb-4">
-                <div class="bg-black ms-3" style="width: 100px; height: 6px; margin-bottom: 10px; border-radius: 2px"></div>
+                <div
+                  class="bg-black ms-3"
+                  style="
+                    width: 100px;
+                    height: 6px;
+                    margin-bottom: 10px;
+                    border-radius: 2px;
+                  "
+                ></div>
                 <h2 class="section-title mb-0 ms-3">
                   Payment Plans Now Available
                 </h2>
@@ -706,7 +670,15 @@
             <!-- Consultation Types (Left Side) -->
             <div class="col-lg-7 consultation-types">
               <div class="p-4 p-lg-5 h-100">
-                <div class="bg-black" style="width: 50px; height: 5px; margin-bottom: 10px; border-radius: 2px"></div>
+                <div
+                  class="bg-black"
+                  style="
+                    width: 50px;
+                    height: 5px;
+                    margin-bottom: 10px;
+                    border-radius: 2px;
+                  "
+                ></div>
                 <h2 class="fs-3 fw-bold mb-4">Types of Consultations</h2>
 
                 <div class="consultation-cards">
@@ -851,7 +823,7 @@
 
                     <div class="col-12 mt-4">
                       <button
-                        class="fancy-button opacity-100  btn-lg w-100 py-3 fw-semibold"
+                        class="fancy-button opacity-100 btn-lg w-100 py-3 fw-semibold"
                         type="submit"
                       >
                         Book Consultation
@@ -868,8 +840,6 @@
     </section>
 
     <!-- Featured -->
-
- 
 
     <section class="py-5 text-black" style="background-color: #232323">
       <div class="container">
@@ -939,7 +909,9 @@
                   </div>
                 </div>
                 <div class="marquee__item">
-                  <div class="bg-white shadow-sm rounded-3 p-3 text-center h-100">
+                  <div
+                    class="bg-white shadow-sm rounded-3 p-3 text-center h-100"
+                  >
                     <img
                       src="accets/images/image52345.png"
                       alt="Partner 6"
@@ -949,7 +921,6 @@
                   </div>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
@@ -1074,22 +1045,27 @@
 
     <!-- FAQ Section -->
 
-    <section class="py-5  faq_container" >
+    <section class="py-5 faq_container">
       <div class="container">
         <div class="faq shadow-lg">
           <!-- Left Content -->
-          <div class="w-75 mx-auto d-flex flex-column text-center">
-            <div class="bg-black mx-auto" style="width: 60px; height: 6px; margin-bottom: 10px; border-radius: 2px"></div>
+          <div class="faq_left mx-auto d-flex flex-column text-center">
+            <div
+              class="bg-black mx-auto"
+              style="
+                width: 60px;
+                height: 6px;
+                margin-bottom: 10px;
+                border-radius: 2px;
+              "
+            ></div>
             <p class="text-uppercase fw-semibold mb-2" style="color: #fb7bca">
               FAQ
             </p>
             <h2 class="fw-bold" style="color: black">
               Questions about Endolift
             </h2>
-            <p
-              style="color: rgba(44, 43, 43, 0.6); line-height: 1.7"
-              class=""
-            >
+            <p style="color: rgba(44, 43, 43, 0.6); line-height: 1.7" class="">
               The answers below will help you learn the basics about Endolift®.
               For more details, feel free to contact us with your questions or
               book a free consultation with one of our expert practitioners.
@@ -1101,7 +1077,7 @@
           </div>
 
           <!-- Right Accordion -->
-          <div class="mx-auto w-75 mt-1">
+          <div class="mx-auto faq_right mt-1">
             <div class="accordion" id="fancyAccordion">
               <!-- Accordion Card -->
               <div
@@ -1272,87 +1248,200 @@
       </div>
     </section>
 
-  <footer class=" text-dark pt-5">
-  <div class=" px-4 px-md-5">
-    <div class="row gy-5">
-      <!-- Brand Section -->
-      <div class="col-lg-4 col-sm-6">
-        <a href="Home.html" class="fs-3 ps-0 ps-sm-2 ps-md-0 fw-bold text-uppercase  text-decoration-none d-inline-block mb-3" style="color:#eb2b84;">Endolift</a>
-        <p class="text-muted small below_logo  ps-0 ps-sm-2 ps-md-0">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nam
-          consequuntur est? Atque tenetur impedit delectus aperiam, hic
-          sequi voluptatem.
-        </p>
-        <div class="d-flex gap-2 mt-3">
-          <a href="#" class="text-dark fs-5"><i class="fa-brands fa-facebook border p-2 rounded-circle"></i></a>
-          <a href="#" class="text-dark fs-5"><i class="fa-brands fa-square-instagram border p-2 rounded-circle"></i></a>
-          <a href="#" class="text-dark fs-5"><i class="fa-brands fa-square-twitter border p-2 rounded-circle"></i></a>
+    <footer class="text-dark pt-5">
+      <div class="px-4 px-md-5">
+        <div class="row gy-5">
+          <!-- Brand Section -->
+          <div class="col-lg-4 col-sm-6">
+            <a
+              href="Home.html"
+              class="fs-3 ps-0 ps-sm-2 ps-md-0 fw-bold text-uppercase text-decoration-none d-inline-block mb-3"
+              style="color: #eb2b84"
+              >Endolift</a
+            >
+            <p class="text-muted small below_logo ps-0 ps-sm-2 ps-md-0">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nam
+              consequuntur est? Atque tenetur impedit delectus aperiam, hic
+              sequi voluptatem.
+            </p>
+            <div class="d-flex gap-2 mt-3">
+              <a href="#" class="text-dark fs-5"
+                ><i class="fa-brands fa-facebook border p-2 rounded-circle"></i
+              ></a>
+              <a href="#" class="text-dark fs-5"
+                ><i
+                  class="fa-brands fa-square-instagram border p-2 rounded-circle"
+                ></i
+              ></a>
+              <a href="#" class="text-dark fs-5"
+                ><i
+                  class="fa-brands fa-square-twitter border p-2 rounded-circle"
+                ></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Treatments -->
+          <div class="col-lg-3 col-sm-6">
+            <h6 class="text-uppercase fw-bold mb-3">Treatments</h6>
+            <ul class="list-unstyled text-muted small">
+              <li class="mb-2">
+                <a
+                  href="Treatments-detail1.html"
+                  class="text-decoration-none text-muted"
+                  >Endolift Laser Skin Tightening Procedure</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="Treatements-detail2.html"
+                  class="text-decoration-none text-muted"
+                  >Under Chin Reduction Endolift</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="Treatements-detail3.html"
+                  class="text-decoration-none text-muted"
+                  >Mandibular Contour (Endolift)</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="Treatements-detail4.html"
+                  class="text-decoration-none text-muted"
+                  >Neck Endolift</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="Treatements-detail5.html"
+                  class="text-decoration-none text-muted"
+                  >Tummy Skin Tightening</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="Treatements-detail6.html"
+                  class="text-decoration-none text-muted"
+                  >Lower Eyelid Endolift</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="Treatements-detail7.html"
+                  class="text-decoration-none text-muted"
+                  >Under Arm Endolift</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="Treatements-detail8.html"
+                  class="text-decoration-none text-muted"
+                  >Lower Mid Face Endolift</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Learn -->
+          <div class="col-lg-2 col-sm-6">
+            <h6 class="text-uppercase fw-bold mb-3 ps-0 ps-sm-2 ps-md-3">
+              Learn
+            </h6>
+            <ul class="list-unstyled text-muted small ps-0 ps-sm-2 ps-md-3">
+              <li class="mb-2">
+                <a href="FAQ.html" class="text-decoration-none text-muted"
+                  >FAQ</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="Trainings.html" class="text-decoration-none text-muted"
+                  >Trainings</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="Location.html" class="text-decoration-none text-muted"
+                  >Location</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="Meet-my-team.html"
+                  class="text-decoration-none text-muted"
+                  >Meet the Team</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="blog.html" class="text-decoration-none text-muted"
+                  >Blog</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="Book-free.html" class="text-decoration-none text-muted"
+                  >Book a Consultation</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-lg-3 col-sm-6">
+            <h6 class="text-uppercase fw-bold mb-3">Newsletter</h6>
+            <p class="text-muted small">
+              Stay updated with the latest tips and exclusive offers.
+            </p>
+
+            <div
+              class="d-flex bg-white border rounded overflow-hidden shadow-sm"
+            >
+              <input
+                type="email"
+                class="form-control border-0 bg-transparent px-3"
+                placeholder="Enter your email"
+              />
+              <button
+                class="btn btn-dark px-3"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#enter-email"
+              >
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Treatments -->
-      <div class="col-lg-3 col-sm-6">
-        <h6 class="text-uppercase fw-bold mb-3">Treatments</h6>
-        <ul class="list-unstyled text-muted small">
-          <li class="mb-2"><a href="Treatments-detail1.html" class="text-decoration-none text-muted">Endolift Laser Skin Tightening Procedure</a></li>
-          <li class="mb-2"><a href="Treatements-detail2.html" class="text-decoration-none text-muted">Under Chin Reduction Endolift</a></li>
-          <li class="mb-2"><a href="Treatements-detail3.html" class="text-decoration-none text-muted">Mandibular Contour (Endolift)</a></li>
-          <li class="mb-2"><a href="Treatements-detail4.html" class="text-decoration-none text-muted">Neck Endolift</a></li>
-          <li class="mb-2"><a href="Treatements-detail5.html" class="text-decoration-none text-muted">Tummy Skin Tightening</a></li>
-          <li class="mb-2"><a href="Treatements-detail6.html" class="text-decoration-none text-muted">Lower Eyelid Endolift</a></li>
-          <li class="mb-2"><a href="Treatements-detail7.html" class="text-decoration-none text-muted">Under Arm Endolift</a></li>
-          <li class="mb-2"><a href="Treatements-detail8.html" class="text-decoration-none text-muted">Lower Mid Face Endolift</a></li>
-        </ul>
-      </div>
-
-      <!-- Learn -->
-      <div class="col-lg-2 col-sm-6">
-        <h6 class="text-uppercase fw-bold mb-3 ps-0 ps-sm-2 ps-md-3">Learn</h6>
-        <ul class="list-unstyled text-muted small ps-0 ps-sm-2 ps-md-3">
-          <li class="mb-2"><a href="FAQ.html" class="text-decoration-none text-muted">FAQ</a></li>
-          <li class="mb-2"><a href="Trainings.html" class="text-decoration-none text-muted">Trainings</a></li>
-          <li class="mb-2"><a href="Location.html" class="text-decoration-none text-muted">Location</a></li>
-          <li class="mb-2"><a href="Meet-my-team.html" class="text-decoration-none text-muted">Meet the Team</a></li>
-          <li class="mb-2"><a href="blog.html" class="text-decoration-none text-muted">Blog</a></li>
-          <li class="mb-2"><a href="Book-free.html" class="text-decoration-none text-muted">Book a Consultation</a></li>
-        </ul>
-      </div>
-
-      <!-- Newsletter -->
-      <div class="col-lg-3 col-sm-6">
-        <h6 class="text-uppercase fw-bold mb-3">Newsletter</h6>
-        <p class="text-muted small">Stay updated with the latest tips and exclusive offers.</p>
-
-        <div class="d-flex bg-white border rounded overflow-hidden shadow-sm">
-          <input type="email" class="form-control border-0 bg-transparent px-3" placeholder="Enter your email" />
-          <button class="btn btn-dark px-3" type="button" data-bs-toggle="modal" data-bs-target="#enter-email">
-            <i class="fa-regular fa-paper-plane"></i>
-          </button>
+      <!-- Subscription Modal -->
+      <div class="modal fade" id="enter-email" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content p-4 text-center">
+            <button
+              type="button"
+              class="btn-close position-absolute end-0 top-0 m-3"
+              data-bs-dismiss="modal"
+            ></button>
+            <img
+              src="accets/images/Thank you.png"
+              width="80"
+              alt=""
+              class="mb-3"
+            />
+            <h5 class="fw-bold mb-2">Welcome to the Endolift Community</h5>
+            <p class="small text-muted">
+              Thank you for subscribing to our newsletter. We're excited to
+              share updates, offers, and expert guidance with you.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Subscription Modal -->
-  <div class="modal fade" id="enter-email" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content p-4 text-center">
-        <button type="button" class="btn-close position-absolute end-0 top-0 m-3" data-bs-dismiss="modal"></button>
-        <img src="accets/images/Thank you.png" width="80" alt="" class="mb-3" />
-        <h5 class="fw-bold mb-2">Welcome to the Endolift Community</h5>
-        <p class="small text-muted">
-          Thank you for subscribing to our newsletter. We're excited to share updates, offers, and expert guidance with you.
-        </p>
+      <!-- Footer Bottom -->
+      <div class="border-top mt-5 fw-bold pt-4 pb-3 text-center text-muted">
+        © 2024 Quick N Easy. All Rights Reserved.
       </div>
-    </div>
-  </div>
-
-  <!-- Footer Bottom -->
-  <div class="border-top mt-5 fw-bold pt-4 pb-3 text-center  text-muted">
-    © 2024 Quick N Easy. All Rights Reserved.
-  </div>
-</footer>
-
+    </footer>
 
     <script src="accets/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -1369,6 +1458,7 @@
         centerMode: true,
         centerPadding: "0px",
         slidesToShow: 3,
+        pauseOnFocus: true,
         dots: true,
         responsive: [
           {
@@ -1387,6 +1477,50 @@
               centerMode: true,
               centerPadding: "0px",
               slidesToShow: 1,
+            },
+          },
+        ],
+      });
+
+      $(".before_slider").slick({
+        centerMode: true,
+        centerPadding: "0px",
+        slidesToShow: 3,
+        infinite: true,
+        autoplay: true,
+        pauseOnFocus: true,
+        dots: true,
+        autoplaySpeed: 4000,
+        arrows: true,
+        draggable: false, 
+        swipe: false, 
+        touchMove: false,
+        accessibility: false, 
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              arrows: true, // keep arrows on smaller screens
+              centerMode: true,
+              centerPadding: "20px",
+              slidesToShow: 2,
+              draggable: false,
+              swipe: false,
+              touchMove: false,
+              accessibility: false,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: "0px",
+              slidesToShow: 1,
+              draggable: false,
+              swipe: false,
+              touchMove: false,
+              accessibility: false,
             },
           },
         ],

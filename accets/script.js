@@ -1,7 +1,23 @@
 // document.querySelector('.side-nav-tog').addEventListener('click', () => {
-//     document.querySelector('.side-nav').style.right = 0
+//     document.querySelector('.side-nav').style.right = "0%"
 //     document.querySelector('.mask').style.display = "block"
 // })
+
+
+// document.querySelector('.mask').addEventListener('click', () => {
+//     document.querySelector('.side-nav').style.right = "-100%"
+//     document.querySelector('.mask').style.display = "none"
+// })
+
+// document.querySelector('.side-nav-close').addEventListener('click', () => {
+//     document.querySelector('.side-nav').style.right = "-100%"
+//     document.querySelector('.mask').style.display = "none"
+// })
+
+document.querySelector(".side-nav-tog").addEventListener('click', () => {
+  document.querySelector(".side-nav").style.right = 0;
+   document.querySelector(".mask").style.display = "block";
+})
 
 
 document.querySelector('.mask').addEventListener('click', () => {
@@ -9,10 +25,10 @@ document.querySelector('.mask').addEventListener('click', () => {
     document.querySelector('.mask').style.display = "none"
 })
 
-document.querySelector('.side-nav-close').addEventListener('click', () => {
-    document.querySelector('.side-nav').style.right = "-100%"
-    document.querySelector('.mask').style.display = "none"
-})
+document.querySelector(".menu_close").addEventListener("click", () => {
+  document.querySelector(".side-nav").style.right = "-100%";
+   document.querySelector('.mask').style.display = "none"
+});
 
 
 // count user etc
@@ -51,12 +67,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // Before-after section
-const container = document.querySelector(".image-container");
-const slider = document.querySelector(".slider");
+document.addEventListener("DOMContentLoaded", function () {
+  // Initialize all sliders
+  const containers = document.querySelectorAll(".image-container");
 
-slider.addEventListener("input", (e) => {
-  const position = `${e.target.value}%`;
-  container.style.setProperty("--position", position);
+  containers.forEach((container) => {
+    const slider = container.querySelector(".slider");
+
+    // Set initial position
+    container.style.setProperty("--position", "50%");
+
+    // Add input event listener
+    slider.addEventListener("input", (e) => {
+      const position = `${e.target.value}%`;
+      container.style.setProperty("--position", position);
+    });
+
+    // Add touch support for mobile
+    slider.addEventListener("touchmove", (e) => {
+      const position = `${e.target.value}%`;
+      container.style.setProperty("--position", position);
+    });
+  });
 });
 
 
