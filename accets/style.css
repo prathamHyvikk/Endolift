@@ -642,7 +642,9 @@ position: absolute !important;
 .faq_container{
   background-color: #f8f9fa;
 }
-
+.accordion-body{
+  font-size: 14px;
+}
 .faq{
 
   padding: 10px 0 20px 0;
