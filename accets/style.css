@@ -17,12 +17,27 @@ body {
   overflow-x: hidden !important;
 }
 
+html, body {
+  overflow: auto;
+  scrollbar-width: none;      /* Firefox */
+  -ms-overflow-style: none;   /* IE and Edge */
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;              /* Chrome, Safari */
+}
+
 /* may changes start */
 :root {
   --main-bg: #f0dbe8;
   --fancy-glass: rgba(255, 255, 255, 0.4);
   --fancy-border: rgba(255, 255, 255, 0.2);
   --black-shade: #1b1c1c;
+     --theme-color: #f0dbe8;  /* Your soft pink theme */
+            --primary-color: #9e6b8b;  /* Muted purple that complements your theme */
+            --secondary-color: #d4a5c4; /* Lighter pink accent */
+            --text-color: #4a4a4a;
+            --dark-accent: #6d466b;
 }
 
 /* Backgrounds and Base */
@@ -967,6 +982,129 @@ footer .text-center {
 .treatment-info a:hover {
   text-decoration: underline;
 }
+
+
+
+/* Treatment - 6 */
+  .benefits-section {
+            padding: 80px 0 0px;
+            background-color: rgba(240, 219, 232, 0.2); /* Very light theme tint */
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 60px;
+            text-align: center;
+            position: relative;
+            color: var(--dark-accent);
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            border-radius: 3px;
+        }
+        
+        .benefits-grid {
+            display: flex;
+           flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .benefit-card {
+            background: white;
+            border-radius: 12px;
+            width: 350px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(158, 107, 139, 0.08);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(240, 219, 232, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(158, 107, 139, 0.12);
+            border-color: var(--secondary-color);
+        }
+        
+        .benefit-card:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+        }
+        
+        .benefit-card b {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        .icon-wrapper {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(240, 219, 232, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .icon-wrapper i {
+            font-size: 20px;
+        }
+
+.care-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .care-timeline:before {
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .timeline-item {
+    position: relative;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .timeline-marker {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
 
 /* Training Page */
 

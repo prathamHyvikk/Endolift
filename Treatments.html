@@ -55,101 +55,186 @@
     <!-- mask end -->
 
     <!-- side nav -->
-    <div class="side-nav d-flex justify-content-center">
+    <div class="side-nav d-md-none h-100 d-flex flex-column">
       <i
-        class="fa-solid fa-circle-chevron-right position-absolute top-50 pointer fs-3 bg-main rounded-circle py-1 px-1 side-nav-close"
-        style="left: -13px"
+        class="fa-solid menu_close fa-circle-chevron-right position-absolute pointer fs-3 rounded-circle p-2"
+        style="left: -20px; background: #f0dbe8; top: 35px"
       ></i>
 
-      <ul class="d-flex flex-column gap-3 p-0 w-100 p-4">
-        <li class="list-group text-black p-2 fw-semibold">
-          <a href="Treatments.html">Treatments</a>
+      <ul class="d-flex flex-column gap-2 p-0 w-100 px-4 py-5 mt-3">
+        <li class="nav-item">
+          <a
+            href="Treatments.html"
+            class="nav-link text-black fw-semibold py-3 px-3 rounded"
+            >Treatments</a
+          >
         </li>
-        <li class="list-group text-black p-2 fw-semibold">
-          <a href="Trainings.html">Trainings</a>
+        <li class="nav-item">
+          <a
+            href="Trainings.html"
+            class="nav-link text-black fw-semibold py-3 px-3 rounded"
+            >Trainings</a
+          >
         </li>
-        <li class="list-group text-black p-2 fw-semibold">
-          <a href="Location.html">Location</a>
+        <li class="nav-item">
+          <a
+            href="Location.html"
+            class="nav-link text-black fw-semibold py-3 px-3 rounded"
+            >Location</a
+          >
         </li>
-        <li class="list-group text-black p-2 fw-semibold">
-          <a href="Book-free.html">Book a free consultation </a>
+        <li class="nav-item">
+          <a
+            href="Book-free.html"
+            class="nav-link text-black fw-semibold py-3 px-3 rounded"
+            >Book a free consultation</a
+          >
         </li>
-        <li class="list-group text-black p-2 fw-semibold">
-          <a href="FAQ.html">FAQ</a>
+        <li class="nav-item">
+          <a
+            href="FAQ.html"
+            class="nav-link text-black fw-semibold py-3 px-3 rounded"
+            >FAQ</a
+          >
         </li>
-        <li class="list-group text-black p-2 fw-semibold">
-          <a href="Meet-my-team.html">Meet the team</a>
+        <li class="nav-item">
+          <a
+            href="Meet-my-team.html"
+            class="nav-link text-black fw-semibold py-3 px-3 rounded"
+            >Meet the team</a
+          >
         </li>
-        <li class="list-group text-black p-2 fw-semibold">
-          <a href="blog.html">Blog</a>
+        <li class="nav-item">
+          <a
+            href="blog.html"
+            class="nav-link text-black fw-semibold py-3 px-3 rounded"
+            >Blog</a
+          >
         </li>
       </ul>
+
+      <!-- <div class="mt-auto px-4 pb-4">
+        <div class="d-flex gap-3 justify-content-center">
+          <a href="#" class="text-black fs-5"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="#" class="text-black fs-5"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="text-black fs-5"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div> -->
     </div>
     <!-- side nav end -->
 
-    <nav class="navbar navbar-expand-lg">
-      <div
-        class="container bg-main py-3 px-4 mx-lg-auto mx-md-auto rounded-2 mt-2 mx-3"
-      >
-        <a class="navbar-brand fw-bold" href="Home.html">Endolift</a>
-        <div
-          class="d-flex gap-lg-3 gap-md-2 align-items-center justify-content-end"
-          id="navbarNav"
-        >
-          <ul
-            class="d-lg-flex d-md-flex d-none gap-lg-4 gap-md-3 align-items-center m-0 p-0"
-          >
-            <li class="list-group">
-              <a
-                class="fw-bold text-black"
-                aria-current="page"
-                href="Treatments.html"
-                >Treatments</a
-              >
-            </li>
-            <li class="list-group">
-              <a
-                class="fw-bold text-black"
-                aria-current="page"
-                href="Trainings.html"
-                >Trainings</a
-              >
-            </li>
-            <li class="list-group">
-              <a
-                class="fw-semibold bg-black rounded-2 text-main px-4 py-2"
-                aria-current="page"
-                href="Book-free.html"
-                >Book a free consultation
-                <i class="fa-solid ms-2 fa-arrow-right-long"></i
-              ></a>
-            </li>
-          </ul>
-          <li class="list-group">
-            <i
-              class="fa-solid fa-bars-staggered bg-black text-main pointer p-2 rounded fs-5 side-nav-tog"
-            ></i>
-          </li>
-        </div>
-      </div>
-    </nav>
-    <!-- navbar end -->
 
-    <div
+
+
+    <section
+      class="home-banner-bg"
+      style="background-image: linear-gradient(to bottom, #f0dbe8, white)"
+    >
+      <!-- design start -->
+      <nav class="navbar navbar-expand-lg">
+        <div
+          class="container bg-white fancy-navbar py-3 px-4 mt-2 mx-2 mx-sm-auto"
+          style="border-radius: 50px"
+        >
+          <a class="navbar-brand fw-bold text-black" href="Home.html"
+            >Endolift</a
+          >
+          <i
+            class="fa-solid fa-bars d-block d-md-none side-nav-tog"
+            style="font-size: 25px"
+          ></i>
+          <div
+            class="d-flex gap-lg-3 d-none d-md-block gap-md-2 align-items-center justify-content-end"
+            id="navbarNav"
+          >
+            <ul
+              class="d-lg-flex d-md-flex d-none gap-lg-4 gap-md-3 align-items-center m-0 p-0"
+            >
+              <li class="list-group">
+                <a
+                  class="fw-bold text-black nav-link-fancy"
+                  href="Treatments.html"
+                  >Treatments</a
+                >
+              </li>
+              <li class="list-group">
+                <a
+                  class="fw-bold text-black nav-link-fancy"
+                  href="Trainings.html"
+                  >Trainings</a
+                >
+              </li>
+              <li class="list-group">
+                <a
+                  class="fw-bold text-black nav-link-fancy"
+                  href="Trainings.html"
+                  >Location</a
+                >
+              </li>
+              <li class="list-group">
+                <a
+                  class="fw-bold text-black nav-link-fancy"
+                  href="Trainings.html"
+                  >FAQ</a
+                >
+              </li>
+              <li class="list-group">
+                <a
+                  class="fw-bold text-black nav-link-fancy"
+                  href="Trainings.html"
+                  >Meet the team</a
+                >
+              </li>
+              <li class="list-group">
+                <a
+                  class="fw-bold text-black nav-link-fancy"
+                  href="Trainings.html"
+                  >Blog</a
+                >
+              </li>
+              <li class="list-group">
+                <a
+                  href="Book-free.html"
+                  class="fancy-button d-none d-lg-block fw-semibold"
+                >
+                  Book a free consultation
+                  <i class="fa-solid ms-2 fa-arrow-right-long"></i>
+                </a>
+              </li>
+            </ul>
+
+            <!-- <li class="list-group">
+              <i
+                class="fa-solid fa-bars-staggered menu-icon text-black p-2 rounded fs-5 side-nav-tog"
+              ></i>
+            </li> -->
+          </div>
+        </div>
+      </nav>
+
+      <div
       class="container  my-5 py-4 px-3 px-md-5 rounded-4 shadow-sm"
-      style="background-image: linear-gradient(to bottom, white, #f4e6e2)"
+      style="background-color: #232323;"
+  
     >
       <div class="text-center">
-        <h2 class="display-5 fw-bold text-dark mb-3">Treatments</h2>
-        <p class="lead text-muted mx-auto" style="max-width: 700px">
+        <h2 class="display-5 text-white fw-bold text-dark mb-3">Treatments</h2>
+        <p class="lead  mx-auto text-white" style="max-width: 700px">
           "Endolift offers expert non-surgical skin tightening and rejuvenation
           treatments. Our skilled practitioners help contour, tighten, and
           refresh your skin with this innovative laser-based procedure. Visit
           our clinic in Florida."
         </p>
       </div>
-      <div class="border-top border-2 border-dark mt-4 w-25 mx-auto"></div>
+      <div class="border-top border-white border-2 border-dark mt-4 w-25 mx-auto"></div>
     </div>
+    </section>
+    <!-- navbar end -->
+
 
     <!-- Treatment Photos -->
 
@@ -638,146 +723,205 @@
         </div>
       </div>
     </section>
-
-    <footer class="bg-main">
-      <div class="container py-5 px-lg-2 px-md-2 px-4">
-        <div class="row">
-          <div class="col-lg-3 col-md-10 mb-lg-0 mb-4">
-            <div class="fw-bold fs-2 text-uppercase">
-              <a href="Home.html">Endolift</a>
-            </div>
-            <div>
-              <i
-                class="fa-brands fs-4 p-2 rounded-circle border fa-facebook"
-              ></i>
-              <i
-                class="fa-brands fs-4 p-2 rounded-circle border fa-square-instagram"
-              ></i>
-              <i
-                class="fa-brands fs-4 p-2 rounded-circle border fa-square-twitter"
-              ></i>
+    <footer class="text-dark pt-5">
+      <div class="px-4 px-md-5">
+        <div class="row gy-5">
+          <!-- Brand Section -->
+          <div class="col-lg-4 col-sm-6">
+            <a
+              href="Home.html"
+              class="fs-3 ps-0 ps-sm-2 ps-md-0 fw-bold text-uppercase text-decoration-none d-inline-block mb-3"
+              style="color: #eb2b84"
+              >Endolift</a
+            >
+            <p class="text-muted small below_logo ps-0 ps-sm-2 ps-md-0">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nam
+              consequuntur est? Atque tenetur impedit delectus aperiam, hic
+              sequi voluptatem.
+            </p>
+            <div class="d-flex gap-2 mt-3">
+              <a href="#" class="text-dark fs-5"
+                ><i class="fa-brands fa-facebook bg-white border p-2 rounded-circle"></i
+              ></a>
+              <a href="#" class="text-dark fs-5"
+                ><i
+                  class="fa-brands fa-square-instagram bg-white border p-2 rounded-circle"
+                ></i
+              ></a>
+              <a href="#" class="text-dark fs-5"
+                ><i
+                  class="fa-brands fa-square-twitter bg-white border p-2 rounded-circle"
+                ></i
+              ></a>
             </div>
           </div>
-          <div class="col-lg-3 col-md-4 mb-lg-0 mb-4">
-            <div class="fw-bold fs-5 mb-3 text-uppercase">TREATMENTS</div>
-            <ul class="list-unstyled">
-              <li class="my-2 fw-semibold">
-                <a href="Treatments-detail1.html"
+
+          <!-- Treatments -->
+          <div class="col-lg-3 col-sm-6">
+            <h6 class="text-uppercase fw-bold mb-3">Treatments</h6>
+            <ul class="list-unstyled text-muted small">
+              <li class="mb-2">
+                <a
+                  href="Treatments-detail1.html"
+                  class="text-decoration-none text-muted"
                   >Endolift Laser Skin Tightening Procedure</a
                 >
               </li>
-              <li class="my-2 fw-semibold">
-                <a href="Treatements-detail2.html"
+              <li class="mb-2">
+                <a
+                  href="Treatements-detail2.html"
+                  class="text-decoration-none text-muted"
                   >Under Chin Reduction Endolift</a
                 >
               </li>
-              <li class="my-2 fw-semibold">
-                <a href="Treatements-detail3.html"
+              <li class="mb-2">
+                <a
+                  href="Treatements-detail3.html"
+                  class="text-decoration-none text-muted"
                   >Mandibular Contour (Endolift)</a
                 >
               </li>
-              <li class="my-2 fw-semibold">
-                <a href="Treatements-detail4.html">Neck Endolift</a>
+              <li class="mb-2">
+                <a
+                  href="Treatements-detail4.html"
+                  class="text-decoration-none text-muted"
+                  >Neck Endolift</a
+                >
               </li>
-              <li class="my-2 fw-semibold">
-                <a href="Treatements-detail5.html">Tummy Skin Tightening</a>
+              <li class="mb-2">
+                <a
+                  href="Treatements-detail5.html"
+                  class="text-decoration-none text-muted"
+                  >Tummy Skin Tightening</a
+                >
               </li>
-              <li class="my-2 fw-semibold">
-                <a href="Treatements-detail6.html">Lower Eyelid Endolift</a>
+              <li class="mb-2">
+                <a
+                  href="Treatements-detail6.html"
+                  class="text-decoration-none text-muted"
+                  >Lower Eyelid Endolift</a
+                >
               </li>
-              <li class="my-2 fw-semibold">
-                <a href="Treatements-detail7.html">Under Arm Endolift</a>
+              <li class="mb-2">
+                <a
+                  href="Treatements-detail7.html"
+                  class="text-decoration-none text-muted"
+                  >Under Arm Endolift</a
+                >
               </li>
-              <li class="my-2 fw-semibold">
-                <a href="Treatements-detail8.html">Lower Mid Face Endolift</a>
+              <li class="mb-2">
+                <a
+                  href="Treatements-detail8.html"
+                  class="text-decoration-none text-muted"
+                  >Lower Mid Face Endolift</a
+                >
               </li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-4 mb-lg-0 mb-4">
-            <div class="fw-bold fs-5 mb-3 text-uppercase">LEARN</div>
 
-            <ul class="list-unstyled">
-              <li class="my-2 fw-semibold"><a href="FAQ.html">FAQ</a></li>
-              <li class="my-2 fw-semibold">
-                <a href="Trainings.html">Trainings</a>
+          <!-- Learn -->
+          <div class="col-lg-2 col-sm-6">
+            <h6 class="text-uppercase fw-bold mb-3 ps-0 ps-sm-2 ps-md-3">
+              Learn
+            </h6>
+            <ul class="list-unstyled text-muted small ps-0 ps-sm-2 ps-md-3">
+              <li class="mb-2">
+                <a href="FAQ.html" class="text-decoration-none text-muted"
+                  >FAQ</a
+                >
               </li>
-              <li class="my-2 fw-semibold">
-                <a href="Location.html">Location</a>
+              <li class="mb-2">
+                <a href="Trainings.html" class="text-decoration-none text-muted"
+                  >Trainings</a
+                >
               </li>
-              <li class="my-2 fw-semibold">
-                <a href="Meet-my-team.html">Meet the team</a>
+              <li class="mb-2">
+                <a href="Location.html" class="text-decoration-none text-muted"
+                  >Location</a
+                >
               </li>
-              <li class="my-2 fw-semibold"><a href="blog.html">Blog</a></li>
-              <li class="my-2 fw-semibold">
-                <a href="Book-free.html">Book a free consultation</a>
+              <li class="mb-2">
+                <a
+                  href="Meet-my-team.html"
+                  class="text-decoration-none text-muted"
+                  >Meet the Team</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="blog.html" class="text-decoration-none text-muted"
+                  >Blog</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="Book-free.html" class="text-decoration-none text-muted"
+                  >Book a Consultation</a
+                >
               </li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-4 mb-lg-0">
-            <div class="fw-bold fs-5 mb-3 text-uppercase">Newsletter</div>
 
-            <!-- Modal -->
+          <!-- Newsletter -->
+          <div class="col-lg-3 col-sm-6">
+            <h6 class="text-uppercase fw-bold mb-3">Newsletter</h6>
+            <p class="text-muted small">
+              Stay updated with the latest tips and exclusive offers.
+            </p>
+
             <div
-              class="modal fade"
-              id="enter-email"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
+              class="d-flex bg-white border rounded overflow-hidden shadow-sm"
             >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header border-0">
-                    <button
-                      type="button"
-                      class="btn-close position-absolute end-0 mt-4 mx-3"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="text-center">
-                      <img
-                        src="accets/images/Thank you.png"
-                        width="100"
-                        alt=""
-                      />
-                      <div class="fs-3 fw-bold my-4 lh-1">
-                        Welcome to the Endolift Community
-                      </div>
-                      <div class="my-2">
-                        Thank you for subscribing to our newsletter. We're
-                        thrilled to have you on board and excited to share the
-                        latest news, exclusive offers, and expert tips to help
-                        you achieve your wellness and aesthetic goals.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center bg-black px-2 py-1 rounded-2">
               <input
-                type="text"
-                class="enter-email text-main form-control bg-transparent border-0"
-                placeholder="Enter your email address"
+                type="email"
+                class="form-control border-0 bg-transparent px-3"
+                placeholder="Enter your email"
               />
-              <i
-                class="ms-2 fa-regular fa-paper-plane text-main pointer"
+              <button
+                class="btn btn-dark px-3"
+                type="button"
                 data-bs-toggle="modal"
                 data-bs-target="#enter-email"
-              ></i>
+              >
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
             </div>
+
+
+            <h6 class="text-uppercase fw-bold mt-3">Contact</h6>
+            <p class="text-muted small" ><i style="font-size: 15px; height: 15px; width: 15px;" class="fa-solid fa-location-dot mx-2"></i>7500 NW 25th St, Ste 106, Miami, FL 33122</p>
+            <p class="text-muted small" ><i style="font-size: 15px; height: 15px; width: 15px;" class="fa-solid fa-phone mx-2"></i>(305) 398-4370</p>
+            <p class="text-muted small" ><i style="font-size: 15px; height: 15px; width: 15px;" class="fa-solid fa-envelope mx-2"></i>aesthetics@mynuceria.com</p>
+
           </div>
         </div>
       </div>
 
-      <div class="bg-main">
-        <div
-          class="py-4 container fw-semibold border-top border-dark text-center"
-        >
-          © 2024 Quick N Easy. All Rights Reserved.
+      <!-- Subscription Modal -->
+      <div class="modal fade" id="enter-email" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content p-4 text-center">
+            <button
+              type="button"
+              class="btn-close position-absolute end-0 top-0 m-3"
+              data-bs-dismiss="modal"
+            ></button>
+            <img
+              src="accets/images/Thank you.png"
+              width="80"
+              alt=""
+              class="mb-3"
+            />
+            <h5 class="fw-bold mb-2">Welcome to the Endolift Community</h5>
+            <p class="small text-muted">
+              Thank you for subscribing to our newsletter. We're excited to
+              share updates, offers, and expert guidance with you.
+            </p>
+          </div>
         </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="border-top mt-5 fw-bold pt-4 pb-3 text-center text-muted">
+        © 2024 Quick N Easy. All Rights Reserved.
       </div>
     </footer>
 

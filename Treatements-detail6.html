@@ -2,104 +2,250 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="accets/style.css">
-    <link rel="stylesheet" href="accets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
-        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
-        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
-        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="accets/style.css" />
+  <link rel="stylesheet" href="accets/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Home</title>
 </head>
 
 <style>
+ 
+
+  
     .accordion-button:not(.collapsed) {
-        background-color: #000 !important;
-        color: #fff;
+      background-color: #f0dbe8 !important;
+      color: black !important;
+      font-weight: 800 !important;
     }
 
     .accordion-button:not(.collapsed)::after {
-        background-image: url('accets/images/rounded minus icon.png');
+      background-image: url("accets/images/Minus-icon.png");
     }
 
     .accordion-button::after {
-        background-image: url('accets/images/rounded plus icon.png');
+      background-image: url("accets/images/Plus-icon.png");
     }
 </style>
 
 <body>
+  <!-- navbar -->
 
-    <!-- navbar -->
+  <!-- mask -->
+  <div class="mask"></div>
+  <!-- mask end -->
+  <div class="side-nav d-md-none h-100 d-flex flex-column">
+    <i class="fa-solid menu_close fa-circle-chevron-right position-absolute pointer fs-3 rounded-circle p-2"
+      style="left: -20px; background: #f0dbe8; top: 35px"></i>
 
-    <!-- mask -->
-    <div class="mask"></div>
-    <!-- mask end -->
+    <ul class="d-flex flex-column gap-2 p-0 w-100 px-4 py-5 mt-3">
+      <li class="nav-item">
+        <a href="Treatments.html" class="nav-link text-black fw-semibold py-3 px-3 rounded">Treatments</a>
+      </li>
+      <li class="nav-item">
+        <a href="Trainings.html" class="nav-link text-black fw-semibold py-3 px-3 rounded">Trainings</a>
+      </li>
+      <li class="nav-item">
+        <a href="Location.html" class="nav-link text-black fw-semibold py-3 px-3 rounded">Location</a>
+      </li>
+      <li class="nav-item">
+        <a href="Book-free.html" class="nav-link text-black fw-semibold py-3 px-3 rounded">Book a free consultation</a>
+      </li>
+      <li class="nav-item">
+        <a href="FAQ.html" class="nav-link text-black fw-semibold py-3 px-3 rounded">FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a href="Meet-my-team.html" class="nav-link text-black fw-semibold py-3 px-3 rounded">Meet the team</a>
+      </li>
+      <li class="nav-item">
+        <a href="blog.html" class="nav-link text-black fw-semibold py-3 px-3 rounded">Blog</a>
+      </li>
+    </ul>
 
-    <!-- side nav -->
-    <div class="side-nav d-flex  justify-content-center">
-        <i class="fa-solid fa-circle-chevron-right position-absolute top-50 pointer fs-3 bg-main rounded-circle py-1 px-1 side-nav-close"
-            style="left: -13px;"></i>
+    <!-- <div class="mt-auto px-4 pb-4">
+        <div class="d-flex gap-3 justify-content-center">
+          <a href="#" class="text-black fs-5"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="#" class="text-black fs-5"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="text-black fs-5"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div> -->
+  </div>
+  <!-- side nav end -->
 
-        <ul class="d-flex flex-column gap-3 p-0 w-100 p-4">
-            <li class="list-group text-black p-2 fw-semibold"><a href="Treatments.html">Treatments</a></li>
-            <li class="list-group text-black p-2 fw-semibold"><a href="Trainings.html">Trainings</a></li>
-            <li class="list-group text-black p-2 fw-semibold"><a href="Location.html">Location</a></li>
-            <li class="list-group text-black p-2 fw-semibold"><a href="Book-free.html">Book a free consultation </a>
-            </li>
-            <li class="list-group text-black p-2 fw-semibold"><a href="FAQ.html">FAQ</a></li>
-            <li class="list-group text-black p-2 fw-semibold"><a href="Meet-my-team.html">Meet the team</a></li>
-            <li class="list-group text-black p-2 fw-semibold"><a href="blog.html">Blog</a></li>
-        </ul>
-    </div>
-    <!-- side nav end -->
-
+  <section class="home-banner-bg" style="background-color: #f0dbe833; padding-bottom: 300px;">
+    <!-- design start -->
     <nav class="navbar navbar-expand-lg">
-        <div class="container bg-main py-3 px-4 mx-lg-auto mx-md-auto rounded-2 mt-2 mx-3">
-            <a class="navbar-brand fw-bold" href="Home.html">Endolift</a>
-            <div class="d-flex gap-lg-3 gap-md-2 align-items-center justify-content-end" id="navbarNav">
+      <div class="container bg-white fancy-navbar py-3 px-4 mt-2 mx-2 mx-sm-auto" style="border-radius: 50px">
+        <a class="navbar-brand fw-bold text-black" href="Home.html">Endolift</a>
+        <i class="fa-solid fa-bars d-block d-md-none side-nav-tog" style="font-size: 25px"></i>
+        <div class="d-flex gap-lg-3 d-none d-md-block gap-md-2 align-items-center justify-content-end" id="navbarNav">
+          <ul class="d-lg-flex d-md-flex d-none gap-lg-4 gap-md-3 align-items-center m-0 p-0">
+            <li class="list-group">
+              <a class="fw-bold text-black nav-link-fancy" href="Treatments.html">Treatments</a>
+            </li>
+            <li class="list-group">
+              <a class="fw-bold text-black nav-link-fancy" href="Trainings.html">Trainings</a>
+            </li>
+            <li class="list-group">
+              <a class="fw-bold text-black nav-link-fancy" href="Trainings.html">Location</a>
+            </li>
+            <li class="list-group">
+              <a class="fw-bold text-black nav-link-fancy" href="Trainings.html">FAQ</a>
+            </li>
+            <li class="list-group">
+              <a class="fw-bold text-black nav-link-fancy" href="Trainings.html">Meet the team</a>
+            </li>
+            <li class="list-group">
+              <a class="fw-bold text-black nav-link-fancy" href="Trainings.html">Blog</a>
+            </li>
+            <li class="list-group">
+              <a href="Book-free.html" class="fancy-button d-none d-lg-block fw-semibold">
+                Book a free consultation
+                <i class="fa-solid ms-2 fa-arrow-right-long"></i>
+              </a>
+            </li>
+          </ul>
 
-                <ul class="d-lg-flex d-md-flex d-none gap-lg-4 gap-md-3 align-items-center m-0 p-0">
-                    <li class="list-group">
-                        <a class="fw-bold text-black" aria-current="page" href="Treatments.html">Treatments</a>
-                    </li>
-                    <li class="list-group">
-                        <a class="fw-bold text-black" aria-current="page" href="Trainings.html">Trainings</a>
-                    </li>
-                    <li class="list-group">
-                        <a class=" fw-semibold bg-black rounded-2 text-main px-4 py-2" aria-current="page"
-                            href="Book-free.html">Book a free consultation <i
-                                class="fa-solid ms-2 fa-arrow-right-long"></i></a>
-                    </li>
-                </ul>
-                <li class="list-group">
-                    <i class="fa-solid fa-bars-staggered bg-black text-main pointer p-2 rounded fs-5 side-nav-tog"></i>
-                </li>
-            </div>
+          <!-- <li class="list-group">
+              <i
+                class="fa-solid fa-bars-staggered menu-icon text-black p-2 rounded fs-5 side-nav-tog"
+              ></i>
+            </li> -->
         </div>
+      </div>
     </nav>
-    <!-- navbar end -->
 
 
-    <section class="">
-        <div class="container p-0 rounded-3 overflow-hidden"
-            style="background-image: url('accets/images/timage-7 (11).png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-            <div class="d-flex align-items-center justify-content-center" style="height: 500px; background: #00000080;">
-                <div class="text-center text-white">
-                    <div class="display-3 fw-bold">Lower Eyelid Endolift</div>
-                    <p class="mt-2">The Impact of Technology on the Workplace: How Technology is Changing</p>
-                </div>
-            </div>
+    <div>
+
+      <div class="display-4 text-center mt-4 fw-semibold " style="font-style: italic;"> <span
+          style="color: #ff68ae;">Lower Eyelid </span> Endolift</div>
+      <p class="mt-2 text-center">
+        Lift, tighten, and refresh tired eyes—no needles, no scalpels.
+      </p>
+    </div>
+
+
+
+  </section>
+  <!-- navbar end -->
+
+  <section class="" style="margin-top: -250px;">
+    <div class="container p-0 rounded-4 mt-3 overflow-hidden" style="
+            background-image: url('accets/images/timage-7 (11).png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            
+          ">
+      <div class="d-flex align-items-center justify-content-center" style="height: 450px; background: #00000080">
+
+      </div>
+    </div>
+  </section>
+
+  <div class="container mt-5 ">
+    <div class="row">
+      <div class="col-6">
+        <div class=" m-auto mt-5">
+          <h1>Refresh your eyes—no needles, no surgery.</h1>
+          <p>
+            Lower Eyelid Endolift® targets under-eye bags and skin laxity
+            using a precision micro-laser delivered from beneath the skin.
+            It tightens, smooths, and stimulates collagen—all in one
+            session, with no visible scars and minimal downtime. It’s a
+            subtle, natural-looking solution for patients who want to look
+            more rested without fillers or invasive procedures.
+          </p>
         </div>
-    </section>
+      </div>
+      <div class="col-6">
+        <div>
+          <img class="rounded-4" src="./accets/images/eyeEild.jpg" width="100%" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-    <section class="py-5">
+  <!-- Why patiant choose -->
+  <section class="benefits-section mt-3">
+    <div class="container">
+      <h2 class="section-title">Why Patients Choose Endolift for the Under-Eye Area</h2>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="icon-wrapper">
+            <i class="fas fa-eye"></i>
+          </div>
+          <p>We target <b>fat pads and lax skin from the inside</b> —without cutting the surface</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="icon-wrapper">
+            <i class="fas fa-microscope"></i>
+          </div>
+          <p>We use a <b>micro-fiber thinner than hair</b> to deliver heat precisely where needed</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="icon-wrapper">
+            <i class="fas fa-heartbeat"></i>
+          </div>
+          <p><b>No stitches, fillers, or visible trauma</b> —perfect for delicate under-eye tissue</p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="icon-wrapper">
+            <i class="fas fa-clock"></i>
+          </div>
+          <p>We perform the procedure in under <b>30 minutes</b>, and most clients resume daily activities in 1–2 days
+          </p>
+        </div>
+
+        <div class="benefit-card">
+          <div class="icon-wrapper">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <p>You'll see <b>visible tightening and smoothing</b> in weeks, with ongoing improvements for up to 12 months
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="contact-section py-4 mt-4" style="background-color: rgba(240, 219, 232, 0.3); border-radius: 12px;">
+      <div class="container">
+        <p class="mb-0 text-center" style="font-family: 'Montserrat', sans-serif; font-size: 1.1rem; color: #6d466b;">
+          <i class="fas fa-phone-alt me-2" style="color: #9e6b8b;"></i>
+          Call <a href="tel:3053984370" class="fw-bold" style="color: #9e6b8b; text-decoration: none;">305.398.4370</a>
+          or
+          <a href="https://mynuceria.com/products/912/lower-eyelid-endolift" class="fw-bold"
+            style="color: #9e6b8b; text-decoration: underline;">
+            Book a Lower Eyelid Endolift - Nuceria Health, Miami, FL
+          </a>
+
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- <section class="py-5">
         <div class="container">
             <div class="bg-black pt-2 d-inline-block col-1"></div>
             <div class="fs-5 fw-semibold">Treatments</div>
@@ -147,390 +293,1138 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+
+  <!-- Treatment card -->
+  <section class="py-5 mt-5" style="background-color: #232323">
+    <div class="container">
+      <div class="mb-4">
+        <div class="bg-white" style="width: 70px; height: 5px; border-radius: 2px"></div>
+        <p class="text-uppercase fw-semibold text-white-50 mt-2 mb-1 small">
+          Treatments
+        </p>
+        <h2 class="fw-semibold text-white">
+          Improving the appearance of tired or aging eyes.
+        </h2>
+      </div>
+
+      <div class="row flex-nowrap overflow-auto scroll-bar-hidden pb-3">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6 col-10">
+          <div class="treatment-alt-card">
+            <div class="img-wrap">
+              <img
+                src="https://avatars.mds.yandex.net/i?id=379d76d00635c33db8eb6ff3e55cbe9552002b13c26dffb6-12729154-images-thumbs&n=13"
+                alt="Neck Endolift" class="img-fluid rounded-top" />
+            </div>
+            <div class="p-4 rounded-4 tret_detail position-absolute bg-white">
+              <h5 class="fw-bold">1. Under-Eye Skin Tightening</h5>
+
+              <p class="text-grey-50 small mb-3">
+                Lower Eyelid Endolift targets sagging skin under the eyes,
+                firming and smoothing the area for a refreshed look.
+              </p>
+
+              <a href="https://yandex-images.clstorage.net/B53cYW134/6177849E8ae/yXO_nCcDDNSGmFk_v69LiZoKJzEiM5L6_7S4cUP75wegAuavmAvP3SZ16bo-fem-Mx146Dyn_RtrZqhGL5XSmhw2bI33RNuBFl6MPb9uCw7NWuN2NLKFvG8gbnND4anavd_9ZQEUB0Lsc-j4vn07rDJKLmbyNuCXsGb5U2xBz19PePZSqJIDE4hN2X3yrw9KDQKkenF3y7o24fSqG2eunL6VPq-OWk8KrzwiurZ_8X87Qy4veOdln3Qm8lUkCwieSXx3FKmdxlfEB9kyOeNOxUtJZbi7NM94Nuk8oRtjI5_5H7Tki59LSSc_qHayfDj6dAXg4nmkrZu-rHFS48UEUsG-eZJlVgVexkWX8ronyYNLj6L1dbKFdrVg--7ar-_U-Jp-ZQ7SjImtP6L59PZ5urZIpKj2pqsTNqd6WmLMwlYC8DqU6ZrLkcILnLb8pYmDSALntbQwhzEy4rOhlu_lXHsWdCoBHoLCZX8ocT01cfN0DaAvPitjGzXjf9NuQQUfgnux1KEbwRzBA5J9ti3JgkpCKPj6-86x-yp5o5Pj7tR83vMgRFvGCSF1Kvn_9v63PkesYzyj4J51KLcfZgmCEol1sdMvUs6cT4qVMbfkTgKIxWDytHWLvH2mMi6XauNb-B87o4sbywIhfORzf77__XlNKWU1K6JcMmO6HiINi1VEOjeZYRYMlAoLWnP4JAeHCIgqN7e1TnA3abcpV69s0D1TOC3NEsqJLrOj83lx-fqySqmqfCqik3rvtZWnxcwSyj_xXGkcxJXCA5Y-PatPTc2AJvD0e4-zdyW8a1Rm6hC02TPrAJzNTCN56H-_PfS7-sih5LzkoNt7ZT8aLAaNWcd8sxamXExYAwqWffBiCUyADaw-_fyLNrOvMO5XZOAX8xSyL0gdiowm9C3_vPF8ObDA5GM_I-IR92L-m-3ESpKJ-rca71vNGIMBlTz2ZMBDS8qgerkwzHQ25bQn28"
+                class="fancy-button opacity-100 w-auto">
+                Learn More <i class="fa-solid fa-arrow-right-long ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6 col-10">
+          <div class="treatment-alt-card">
+            <div class="img-wrap">
+              <img src="https://i.ytimg.com/vi/lmzMe2SoHX8/maxresdefault.jpg" alt="Lower Mid Face"
+                class="img-fluid rounded-top" />
+            </div>
+            <div class="p-4 rounded-4 tret_detail position-absolute bg-white">
+              <h5 class="text-black fw-bold">2. Collagen Stimulation</h5>
+
+              <p class="text-grey-50 small mb-3">
+                The laser technology stimulates natural collagen production,
+                reducing fine lines and improving skin elasticity for
+                long-lasting results.
+              </p>
+
+              <a href="Treatements-detail6.html" class="fancy-button opacity-100 w-auto">
+                Learn More <i class="fa-solid fa-arrow-right-long ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6 col-10">
+          <div class="treatment-alt-card">
+            <div class="img-wrap">
+              <img src="accets/images/fixed-height (2).png" alt="Jawline Contour" class="img-fluid rounded-top" />
+            </div>
+            <div class="p-4 rounded-4 tret_detail position-absolute bg-white">
+              <h5 class="text-black fw-bold">
+                3. Minimally Invasive Procedure
+              </h5>
+
+              <p class="small mb-3">
+                This non-surgical treatment offers precise results with
+                minimal discomfort and downtime, making it a convenient
+                alternative to traditional eyelid surgery.
+              </p>
+
+              <a href="Treatements-detail3.html" class="fancy-button opacity-100 w-auto">
+                Learn More <i class="fa-solid fa-arrow-right-long ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- video section -->
+  <!-- <section class="py-5 bg-main">
+      <div class="container">
+        <div class="bg-black pt-2 d-inline-block col-1"></div>
+        <div class="fw-semibold text-black">Reviews</div>
+        <div class="fs-2 text-black fw-bold mb-4">
+          What our patients say about us
+        </div>
+
+        <div class="gallery">
+          <ul class="cards">
+            <li>
+              <img src="accets/images/Group 48095381.png" width="100%" alt="" />
+            </li>
+            <li>
+              <img src="accets/images/Group 48095381.png" width="100%" alt="" />
+            </li>
+            <li>
+              <img src="accets/images/Group 48095381.png" width="100%" alt="" />
+            </li>
+            <li>
+              <img src="accets/images/Group 48095381.png" width="100%" alt="" />
+            </li>
+            <li>
+              <img src="accets/images/Group 48095381.png" width="100%" alt="" />
+            </li>
+            <li>
+              <img src="accets/images/Group 48095381.png" width="100%" alt="" />
+            </li>
+            <li>
+              <img src="accets/images/Group 48095381.png" width="100%" alt="" />
+            </li>
+            <li>
+              <img src="accets/images/Group 48095381.png" width="100%" alt="" />
+            </li>
+            <li>
+              <img src="accets/images/Group 48095381.png" width="100%" alt="" />
+            </li>
+            <li>
+              <img src="accets/images/Group 48095381.png" width="100%" alt="" />
+            </li>
+            <li>
+              <img src="accets/images/Group 48095381.png" width="100%" alt="" />
+            </li>
+            <li>
+              <img src="accets/images/Group 48095381.png" width="100%" alt="" />
+            </li>
+            <li>
+              <img src="accets/images/Group 48095381.png" width="100%" alt="" />
+            </li>
+            <li>
+              <img src="accets/images/Group 48095381.png" width="100%" alt="" />
+            </li>
+            <li>
+              <img src="accets/images/Group 48095381.png" width="100%" alt="" />
+            </li>
+            <li>
+              <img src="accets/images/Group 48095381.png" width="100%" alt="" />
+            </li>
+            <li>
+              <img src="accets/images/Group 48095381.png" width="100%" alt="" />
+            </li>
+          </ul>
+          <div class="actions visually-hidden">
+            <button class="prev"></button>
+            <button class="next"></button>
+          </div>
+        </div>
+        <div class="drag-proxy"></div>
+      </div>
+    </section> -->
+
+
+  <!-- Numbers visitors -->
+  <section class="premium-stats">
+    <div class="container">
+      <div class="stats-grid">
+        <!-- Happy Customers -->
+        <div class="stat-item">
+          <div class="stat-card">
+            <div class="stat-content">
+              <div class="stat-number" data-count="15">0</div>
+              <span class="stat-suffix">K</span>
+              <div class="stat-label">Happy Customers</div>
+            </div>
+            <div class="stat-decoration"></div>
+          </div>
+        </div>
+
+        <!-- Monthly Visitors -->
+        <div class="stat-item">
+          <div class="stat-card">
+            <div class="stat-content">
+              <div class="stat-number" data-count="150">0</div>
+              <span class="stat-suffix">K</span>
+              <div class="stat-label">Monthly Visitors</div>
+            </div>
+            <div class="stat-decoration"></div>
+          </div>
+        </div>
+
+        <!-- Nationwide Reach -->
+        <div class="stat-item">
+          <div class="stat-card">
+            <div class="stat-content">
+              <div class="stat-number" data-count="15">0</div>
+              <div class="stat-label">Nationwide Reach</div>
+            </div>
+            <div class="stat-decoration"></div>
+          </div>
+        </div>
+
+        <!-- Trusted Partners -->
+        <div class="stat-item">
+          <div class="stat-card">
+            <div class="stat-content">
+              <div class="stat-number" data-count="100">0</div>
+              <div class="stat-label">Trusted Partners</div>
+            </div>
+            <div class="stat-decoration"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ideal candidates -->
+  <div class="candidates-section py-5" style="background-color: rgba(240, 219, 232, 0.15);">
+    <div class="container">
+      <h3 class="text-center mb-4" style="font-family: 'Playfair Display', serif; color: #6d466b; position: relative;">
+        Ideal Candidates
+        <span
+          style="position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 60px; height: 2px; background: linear-gradient(90deg, #9e6b8b, #d4a5c4);"></span>
+      </h3>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="candidate-list"
+            style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 5px 15px rgba(158, 107, 139, 0.08);">
+            <div class="candidate-item d-flex align-items-start mb-3"
+              style="border-bottom: 1px solid rgba(240, 219, 232, 0.5); padding-bottom: 12px;">
+              <div class="icon-circle me-3"
+                style="width: 28px; height: 28px; background-color: #f0dbe8; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fas fa-eye" style="color: #9e6b8b; font-size: 12px;"></i>
+              </div>
+              <p class="mb-0" style="color: #4a4a4a;">Mild to moderate under-eye puffiness or bags</p>
+            </div>
+
+            <div class="candidate-item d-flex align-items-start mb-3"
+              style="border-bottom: 1px solid rgba(240, 219, 232, 0.5); padding-bottom: 12px;">
+              <div class="icon-circle me-3"
+                style="width: 28px; height: 28px; background-color: #f0dbe8; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fas fa-hand-paper" style="color: #9e6b8b; font-size: 12px;"></i>
+              </div>
+              <p class="mb-0" style="color: #4a4a4a;">Crepey skin or early sagging under the eyes</p>
+            </div>
+
+            <div class="candidate-item d-flex align-items-start mb-3"
+              style="border-bottom: 1px solid rgba(240, 219, 232, 0.5); padding-bottom: 12px;">
+              <div class="icon-circle me-3"
+                style="width: 28px; height: 28px; background-color: #f0dbe8; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fas fa-sun" style="color: #9e6b8b; font-size: 12px;"></i>
+              </div>
+              <p class="mb-0" style="color: #4a4a4a;">Poor skin elasticity due to aging, weight loss, or sun damage</p>
+            </div>
+
+            <div class="candidate-item d-flex align-items-start mb-3"
+              style="border-bottom: 1px solid rgba(240, 219, 232, 0.5); padding-bottom: 12px;">
+              <div class="icon-circle me-3"
+                style="width: 28px; height: 28px; background-color: #f0dbe8; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fas fa-heart" style="color: #9e6b8b; font-size: 12px;"></i>
+              </div>
+              <p class="mb-0" style="color: #4a4a4a;">Looking for a non-surgical, natural-looking solution</p>
+            </div>
+
+            <div class="candidate-item d-flex align-items-start">
+              <div class="icon-circle me-3"
+                style="width: 28px; height: 28px; background-color: #f0dbe8; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <i class="fas fa-calendar-check" style="color: #9e6b8b; font-size: 12px;"></i>
+              </div>
+              <p class="mb-0" style="color: #4a4a4a;">Able to take 1–2 days of social downtime</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+
+  <!-- Expect on Treatment -->
+  <div class="treatment-day-section py-5">
+    <div class="container">
+      <h3 class="text-center mb-5" style="font-family: 'Playfair Display', serif; color: #6d466b; position: relative;">
+        What to Expect on Treatment Day
+        <span
+          style="position: absolute; bottom: -8px; left: 50%; transform: translateX(-50%); width: 80px; height: 2px; background: linear-gradient(90deg, #9e6b8b, #d4a5c4);"></span>
+      </h3>
+
+      <div class="row g-4 justify-content-center">
+        <!-- Step 1 -->
+        <div class="col-md-4">
+          <div class="treatment-step h-100"
+            style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 5px 15px rgba(158, 107, 139, 0.08); border-top: 4px solid #d4a5c4;">
+            <div class="step-number mb-3"
+              style="width: 40px; height: 40px; background-color: #f0dbe8; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #9e6b8b; font-weight: bold; font-family: 'Montserrat', sans-serif;">
+              1</div>
+            <h4 style="color: #6d466b; font-family: 'Montserrat', sans-serif; font-weight: 600;">Consult & Prep</h4>
+            <p style="color: #4a4a4a;">We evaluate the under-eye area and apply topical + local anesthetic.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="col-md-4">
+          <div class="treatment-step h-100"
+            style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 5px 15px rgba(158, 107, 139, 0.08); border-top: 4px solid #9e6b8b;">
+            <div class="step-number mb-3"
+              style="width: 40px; height: 40px; background-color: #f0dbe8; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #9e6b8b; font-weight: bold; font-family: 'Montserrat', sans-serif;">
+              2</div>
+            <h4 style="color: #6d466b; font-family: 'Montserrat', sans-serif; font-weight: 600;">Laser Activation</h4>
+            <p style="color: #4a4a4a;">We insert a 200–300 μm fiber through a tiny puncture near the lower lash line.
+            </p>
+            <ul class="mt-3" style="padding-left: 20px; list-style-type: none;">
+              <li class="mb-2" style="position: relative; padding-left: 25px; color: #4a4a4a;">
+                <span style="position: absolute; left: 0; color: #d4a5c4;">•</span> The laser gently <b> melts small fat
+                  pockets </b>
+              </li>
+              <li class="mb-2" style="position: relative; padding-left: 25px; color: #4a4a4a;">
+                <span style="position: absolute; left: 0; color: #d4a5c4;">•</span> <b> Tightens skin </b> by heating
+                collagen fibers
+              </li>
+              <li style="position: relative; padding-left: 25px; color: #4a4a4a;">
+                <span style="position: absolute; left: 0; color: #d4a5c4;">•</span> <b> Triggers collagen regeneration
+                </b> for months
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="col-md-4">
+          <div class="treatment-step h-100"
+            style="background: white; border-radius: 12px; padding: 30px; box-shadow: 0 5px 15px rgba(158, 107, 139, 0.08); border-top: 4px solid #d4a5c4;">
+            <div class="step-number mb-3"
+              style="width: 40px; height: 40px; background-color: #f0dbe8; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #9e6b8b; font-weight: bold; font-family: 'Montserrat', sans-serif;">
+              3</div>
+            <h4 style="color: #6d466b; font-family: 'Montserrat', sans-serif; font-weight: 600;">Wrap & Go</h4>
+            <p style="color: #4a4a4a;">No stitches needed. You leave with cooling pads and full aftercare instructions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+     <!-- consultation section -->
+
+  <section class="consultation-section py-5" id="get-a-free">
+    <div class="container">
+      <div class="consultation-wrapper bg-white shadow-lg rounded-4 overflow-hidden">
+        <div class="row g-0">
+          <!-- Consultation Types (Left Side) -->
+          <div class="col-lg-7 consultation-types">
+            <div class="p-4 p-lg-5 h-100">
+              <div class="bg-black" style="
+                    width: 50px;
+                    height: 5px;
+                    margin-bottom: 10px;
+                    border-radius: 2px;
+                  "></div>
+              <h2 class="fs-3 fw-bold mb-4">Types of Consultations</h2>
+
+              <div class="consultation-cards">
+                <!-- Card 1 -->
+                <div class="consultation-card">
+                  <div class="card-number">1</div>
+                  <div class="card-content">
+                    <h3 class="card-title">In Person</h3>
+                    <p class="card-text">
+                      get all your questions answered face to face by an
+                      expert Endolift treatment specialist.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="consultation-card">
+                  <div class="card-number">2</div>
+                  <div class="card-content">
+                    <h3 class="card-title">Phone</h3>
+                    <p class="card-text">
+                      speak with an license professional over the phone
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="consultation-card">
+                  <div class="card-number">3</div>
+                  <div class="card-content">
+                    <h3 class="card-title">Facetime</h3>
+                    <p class="card-text">
+                      Learn more about the Endolift process with a Facetime
+                      chat
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="consultation-card">
+                  <div class="card-number">4</div>
+                  <div class="card-content">
+                    <h3 class="card-title">Personalized Plan</h3>
+                    <p class="card-text">
+                      Receive a custom <b>quote</b> and
+                      <b>treatment plan based </b> on your specific goals.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Consultation Form (Right Side) -->
+          <div class="col-lg-5 consultation-form">
+            <div class="p-4 p-lg-5 h-100">
+              <h2 class="fs-3 fw-bold mb-4">Book a Free Consultation</h2>
+
+              <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="firstName" class="form-label">First Name*</label>
+                    <input type="text" class="form-control" id="firstName" required />
+                    <div class="invalid-feedback">
+                      Please provide your first name.
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="lastName" class="form-label">Last Name*</label>
+                    <input type="text" class="form-control" id="lastName" required />
+                    <div class="invalid-feedback">
+                      Please provide your last name.
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email*</label>
+                    <input type="email" class="form-control" id="email" required />
+                    <div class="invalid-feedback">
+                      Please provide a valid email.
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone Number*</label>
+                    <input type="tel" class="form-control" id="phone" required />
+                    <div class="invalid-feedback">
+                      Please provide a valid phone number.
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="message" class="form-label">Message*</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                    <div class="invalid-feedback">
+                      Please provide a message.
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="formFile" class="form-label">Upload Image</label>
+                    <input class="form-control" type="file" id="formFile" />
+                    <div class="form-text">
+                      Accepted file types: jpeg, jpg, png, gif. Max. file
+                      size: 16 MB.
+                    </div>
+                  </div>
+
+                  <div class="col-12 mt-4">
+                    <button class="fancy-button opacity-100 btn-lg w-100 py-3 fw-semibold" type="submit">
+                      Book Consultation
+                      <i class="fas fa-arrow-right ms-2"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Pre- and Post-Care -->
+<section>
+  <div style=" padding: 40px 0; background-color: #232323;">
+    <h3 class="text-center mb-5 fs-1" style="font-family: 'Playfair Display', serif; color: white; position: relative;">
+      Pre- and Post-Care
+
+      <span
+        style="position: absolute; top: 49px; left: 50%; transform: translateX(-50%); width: 80px; height: 2px; background:white"></span>
+    </h3>
+
+
+    <div class="container mt-4 text-white">
+     
+        <div class="row ">
+
+
+          <div class="  col-6   mt-4 d-flex gap-2 align-items-start">
+            <div class="mt-2">
+              <div style="width: 10px; height: 10px; border-radius: 100%; background-color: #ff68ae;"></div>
+            </div>
+
+            <div class="d-flex flex-column align-items-start" style="font-size: 18px;">
+              <h4 class="fw-bolder">5 days before</h4>
+              <p style="color: #A5A5A5;">Avoid aspirin, alcohol, and fish oil.</p>
+            </div>
+          </div>
+
+          <div class="  col-6  mt-4 d-flex gap-2 align-items-start">
+            <div class="mt-2">
+              <div style="width: 10px; height: 10px; border-radius: 100%; background-color: #ff68ae;"></div>
+            </div>
+
+            <div class="d-flex flex-column align-items-start" style="font-size: 18px;">
+              <h4 class="fw-bolder">48 hours before</h4>
+              <p style="color: #A5A5A5;">Stop the use of retinol, acids, or actives around the eyes.</p>
+            </div>
+          </div>
+          <div class="  col-6  mt-4 d-flex gap-2 align-items-start">
+            <div class="mt-2">
+              <div style="width: 10px; height: 10px; border-radius: 100%; background-color: #ff68ae;"></div>
+            </div>
+
+            <div class="d-flex flex-column align-items-start" style="font-size: 18px;">
+              <h4 class="fw-bolder">Day 0–1</h4>
+              <p style="color: #A5A5A5;">Apply cold compresses, avoid heat and rubbing.</p>
+            </div>
+          </div>
+
+          <div class="  col-6  mt-4 d-flex gap-2 align-items-start">
+            <div class="mt-2">
+              <div style="width: 10px; height: 10px; border-radius: 100%; background-color: #ff68ae;"></div>
+            </div>
+
+            <div class="d-flex flex-column align-items-start" style="font-size: 18px;">
+              <h4 class="fw-bolder">Day 2–3</h4>
+              <p style="color: #A5A5A5;">Resume light activity; swelling should decrease.</p>
+            </div>
+          </div>
+
+
+          <div class=" col-6   mt-4 d-flex gap-2 align-items-start">
+            <div class="mt-2">
+              <div style="width: 10px; height: 10px; border-radius: 100%; background-color: #ff68ae;"></div>
+            </div>
+
+            <div class="d-flex flex-column align-items-start" style="font-size: 18px;">
+              <h4 class="fw-bolder">Day 4+</h4>
+              <p class="" style="color: #A5A5A5; ">Gentle skincare and SPF are recommended; visible lifting continues to
+                improve over the months.</p>
+            </div>
+          </div>
+
+
+        </div>
+      
+
+    </div>
+
+
+
+  </div>
+</section>
+
+  <!-- pricing -->
+
+  <section class="pricing-section py-5" style="background-color: #f9f9f9;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="pricing-card p-5" style="background: white; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+          <h2 class="text-center mb-4" style="font-family: 'Playfair Display', serif; color: #6d466b;">
+            Pricing
+            <span style="display: block; width: 60px; height: 3px; background: linear-gradient(90deg, #ff68ae, #f0dbe8); margin: 15px auto 0;"></span>
+          </h2>
+          
+          <div class="price-range text-center mb-4">
+            <span class="price-amount" style="font-size: 2.5rem; font-weight: 700; color: #9e6b8b;">$1,800 - $2,800</span>
+          </div>
+          
+          <p class="text-center mb-4" style="color: #555; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
+            Lower eyelid Endolifts typically cost between $1,800 and $2,800, depending on their complexity and whether they are combined with upper eyelid or cheek treatment. Financing options are available.
+          </p>
+          
+          <div class="cta-buttons d-flex flex-column flex-md-row justify-content-center gap-3 mt-5">
+            <a href="tel:3053984370" class="btn btn-primary py-3 px-4" style="background-color: #9e6b8b; border: none; border-radius: 50px; font-weight: 500; letter-spacing: 0.5px;">
+              <i class="fas fa-phone me-2"></i> Call 305.398.4370
+            </a>
+            <a href="https://mynuceria.com/products/915/mandibular-contour-endolift" class="btn btn-outline-primary py-3 px-4" style="border-color: #9e6b8b; color: #9e6b8b; border-radius: 50px; font-weight: 500; letter-spacing: 0.5px;">
+              <i class="fas fa-calendar-check me-2"></i> Book Consultation
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+   <!-- FAQ Section -->
+
+    <section class="py-5 faq_container">
+      <div class="container">
+        <div class="faq">
+          <!-- Left Content -->
+          <div class="faq_left mx-auto d-flex flex-column text-center">
+            <div
+              class="bg-black mx-auto"
+              style="
+                width: 60px;
+                height: 6px;
+                margin-bottom: 10px;
+                border-radius: 2px;
+              "
+            ></div>
+            <p class="text-uppercase fw-semibold mb-2" style="color: #fb7bca">
+              FAQ
+            </p>
+            <h2 class="fw-bold" style="color: black">
+              Questions about Endolift
+            </h2>
+            <p style="color: rgba(44, 43, 43, 0.6); line-height: 1.7" class="">
+              The answers below will help you learn the basics about Endolift®.
+              For more details, feel free to contact us with your questions or
+              book a free consultation with one of our expert practitioners.
+              <br />
+              This innovative, non-surgical treatment is an excellent option for
+              those seeking noticeable, long-lasting improvements in skin
+              firmness and appearance.
+            </p>
+          </div>
+
+          <!-- Right Accordion -->
+          <div class="mx-auto faq_right mt-1">
+            <div class="accordion" id="fancyAccordion">
+              <!-- Accordion Card -->
+              <div
+                class="accordion-item mb-3 border-0 shadow-sm rounded-3"
+                style="background-color: white"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button bg-white text-dark fw-semibold rounded-top"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1"
+                    aria-expanded="true"
+                  >
+                    <span class="mx-3" style="color: #eb2b84">01</span>
+                    When will I see the results?
+                  </button>
+                </h2>
+                <div
+                  id="faq1"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#fancyAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                   Early tightening is noticeable within 2–4 weeks; full results peak at 6–12 months.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Card -->
+              <div
+                class="accordion-item mb-3 border-0 shadow-sm rounded-3"
+                style="background-color: white"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed bg-white text-dark fw-semibold rounded-top"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                  >
+                    <span class="mx-3" style="color: #eb2b84">02</span>
+                    Does it hurt?
+                  </button>
+                </h2>
+                <div
+                  id="faq2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#fancyAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                   Most clients feel only light pressure or warmth; discomfort is rated 1–2/10 with anesthesia.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Card -->
+              <div
+                class="accordion-item mb-3 border-0 shadow-sm rounded-3"
+                style="background-color: white"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed bg-white text-dark fw-semibold rounded-top"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3"
+                  >
+                    <span class="mx-3" style="color: #eb2b84">03</span>
+                    How long does it last?
+                  </button>
+                </h2>
+                <div
+                  id="faq3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#fancyAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                    Results can last 2–3 years, depending on aging and lifestyle.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Card -->
+              <div
+                class="accordion-item mb-3 border-0 shadow-sm rounded-3"
+                style="background-color: white"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed bg-white text-dark fw-semibold rounded-top"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq4"
+                  >
+                    <span class="mx-3" style="color: #eb2b84">04</span>
+                   How many sessions will I need?
+                  </button>
+                </h2>
+                <div
+                  id="faq4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#fancyAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                   How many sessions will I need?
+Just one for most patients. Touch-ups are optional after 18–24 months.
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Accordion Card -->
+              <div
+                class="accordion-item mb-3 border-0 shadow-sm rounded-3"
+                style="background-color: white"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed bg-white text-dark fw-semibold rounded-top"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq5"
+                  >
+                    <span class="mx-3" style="color: #eb2b84">05</span>
+                    Can it treat dark circles?
+                  </button>
+                </h2>
+                <div
+                  id="faq5"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#fancyAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                   It helps improve texture and skin firmness, which can reduce shadowing. However, pigmentation may need a separate treatment.
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Card -->
+              <div
+                class="accordion-item mb-3 border-0 shadow-sm rounded-3"
+                style="background-color: white"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed bg-white text-dark fw-semibold rounded-top"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq6"
+                  >
+                    <span class="mx-3" style="color: #eb2b84">06</span>
+                   Is it safe for all skin types?
+                  </button>
+                </h2>
+                <div
+                  id="faq6"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#fancyAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                   Yes—Endolift is safe for all skin tones because the laser works beneath the epidermis.
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Card -->
+              <div
+                class="accordion-item mb-3 border-0 shadow-sm rounded-3"
+                style="background-color: white"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed bg-white text-dark fw-semibold rounded-top"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq7"
+                  >
+                    <span class="mx-3" style="color: #eb2b84">07</span>
+                   Will I bruise or swell?
+                  </button>
+                </h2>
+                <div
+                  id="faq7"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#fancyAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                  You may experience light swelling for 1–3 days. Bruising is rare but possible.
+                  </div>
+                </div>
+              </div>
+              <!-- Accordion Card -->
+              <div
+                class="accordion-item mb-3 border-0 shadow-sm rounded-3"
+                style="background-color: white"
+              >
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed bg-white text-dark fw-semibold rounded-top"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq8"
+                  >
+                    <span class="mx-3" style="color: #eb2b84">08</span>
+                 Can I combine it with other treatments?
+                  </button>
+                </h2>
+                <div
+                  id="faq8"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#fancyAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                 Yes—many patients pair Endolift with PRP, skin boosters, or laser resurfacing for enhanced eye rejuvenation.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
 
 
-    <section class="py-5 bg-main">
-        <div class="container">
-            <div class="bg-black pt-2 d-inline-block col-1"></div>
-            <div class="fw-semibold text-black">Reviews</div>
-            <div class="fs-2 text-black fw-bold mb-4">What our patients say about us</div>
-
-            <div class="gallery">
-                <ul class="cards">
-                    <li><img src="accets/images/Group 48095381.png" width="100%" alt=""></li>
-                    <li><img src="accets/images/Group 48095381.png" width="100%" alt=""></li>
-                    <li><img src="accets/images/Group 48095381.png" width="100%" alt=""></li>
-                    <li><img src="accets/images/Group 48095381.png" width="100%" alt=""></li>
-                    <li><img src="accets/images/Group 48095381.png" width="100%" alt=""></li>
-                    <li><img src="accets/images/Group 48095381.png" width="100%" alt=""></li>
-                    <li><img src="accets/images/Group 48095381.png" width="100%" alt=""></li>
-                    <li><img src="accets/images/Group 48095381.png" width="100%" alt=""></li>
-                    <li><img src="accets/images/Group 48095381.png" width="100%" alt=""></li>
-                    <li><img src="accets/images/Group 48095381.png" width="100%" alt=""></li>
-                    <li><img src="accets/images/Group 48095381.png" width="100%" alt=""></li>
-                    <li><img src="accets/images/Group 48095381.png" width="100%" alt=""></li>
-                    <li><img src="accets/images/Group 48095381.png" width="100%" alt=""></li>
-                    <li><img src="accets/images/Group 48095381.png" width="100%" alt=""></li>
-                    <li><img src="accets/images/Group 48095381.png" width="100%" alt=""></li>
-                    <li><img src="accets/images/Group 48095381.png" width="100%" alt=""></li>
-                    <li><img src="accets/images/Group 48095381.png" width="100%" alt=""></li>
-
-                </ul>
-                <div class="actions visually-hidden">
-                    <button class="prev"></button>
-                    <button class="next"></button>
-                </div>
-            </div>
-            <div class="drag-proxy"></div>
-
-
-        </div>
+    <section class="m-5 text-center">
+      <div class="container">
+        <h3>Ready to Look More Rested—Without Surgery?</h3>
+        <p> Appointments are limited—secure your spot now.</p>
+        <div class="cta-buttons d-flex flex-column flex-md-row justify-content-center gap-3 mt-5">
+            <a href="tel:3053984370" class="btn btn-primary py-3 px-4" style="background-color: #9e6b8b; border: none; border-radius: 50px; font-weight: 500; letter-spacing: 0.5px;">
+              <i class="fas fa-phone me-2"></i> Call 305.398.4370
+            </a>
+            <a href="https://mynuceria.com/products/912/lower-eyelid-endolift" class="btn btn-outline-primary py-3 px-4" style="border-color: #9e6b8b; color: #9e6b8b; border-radius: 50px; font-weight: 500; letter-spacing: 0.5px;">
+              <i class="fas fa-calendar-check me-2"></i> Book Consultation
+            </a>
+          </div>
+      </div>
     </section>
-
-    <section>
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-3 col-md-3">
-                    <div class="text-center">
-                        <div class="display-4 fw-bold text-black count ls-sm">15K</div>
-                        <div class="fs-sm text-black-50 fw-bold">Happy Customers</div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3">
-                    <div class="text-center">
-                        <div class="display-4 fw-bold text-black count ls-sm">150K</div>
-                        <div class="fs-sm text-black-50 fw-bold">Monthly Visitors</div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3">
-                    <div class="text-center">
-                        <div class="display-4 fw-bold text-black count ls-sm">15</div>
-                        <div class="fs-sm text-black-50 fw-bold">Nationwide Reach</div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3">
-                    <div class="text-center">
-                        <div class="display-4 fw-bold text-black count ls-sm">100+</div>
-                        <div class="fs-sm text-black-50 fw-bold">Trusted Partners</div>
-                    </div>
-                </div>
+    <footer class="text-dark pt-5">
+      <div class="px-4 px-md-5">
+        <div class="row gy-5">
+          <!-- Brand Section -->
+          <div class="col-lg-4 col-sm-6">
+            <a
+              href="Home.html"
+              class="fs-3 ps-0 ps-sm-2 ps-md-0 fw-bold text-uppercase text-decoration-none d-inline-block mb-3"
+              style="color: #eb2b84"
+              >Endolift</a
+            >
+            <p class="text-muted small below_logo ps-0 ps-sm-2 ps-md-0">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo nam
+              consequuntur est? Atque tenetur impedit delectus aperiam, hic
+              sequi voluptatem.
+            </p>
+            <div class="d-flex gap-2 mt-3">
+              <a href="#" class="text-dark fs-5"
+                ><i class="fa-brands fa-facebook bg-white border p-2 rounded-circle"></i
+              ></a>
+              <a href="#" class="text-dark fs-5"
+                ><i
+                  class="fa-brands fa-square-instagram bg-white border p-2 rounded-circle"
+                ></i
+              ></a>
+              <a href="#" class="text-dark fs-5"
+                ><i
+                  class="fa-brands fa-square-twitter bg-white border p-2 rounded-circle"
+                ></i
+              ></a>
             </div>
-        </div>
-    </section>
+          </div>
 
+          <!-- Treatments -->
+          <div class="col-lg-3 col-sm-6">
+            <h6 class="text-uppercase fw-bold mb-3">Treatments</h6>
+            <ul class="list-unstyled text-muted small">
+              <li class="mb-2">
+                <a
+                  href="Treatments-detail1.html"
+                  class="text-decoration-none text-muted"
+                  >Endolift Laser Skin Tightening Procedure</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="Treatements-detail2.html"
+                  class="text-decoration-none text-muted"
+                  >Under Chin Reduction Endolift</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="Treatements-detail3.html"
+                  class="text-decoration-none text-muted"
+                  >Mandibular Contour (Endolift)</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="Treatements-detail4.html"
+                  class="text-decoration-none text-muted"
+                  >Neck Endolift</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="Treatements-detail5.html"
+                  class="text-decoration-none text-muted"
+                  >Tummy Skin Tightening</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="Treatements-detail6.html"
+                  class="text-decoration-none text-muted"
+                  >Lower Eyelid Endolift</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="Treatements-detail7.html"
+                  class="text-decoration-none text-muted"
+                  >Under Arm Endolift</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="Treatements-detail8.html"
+                  class="text-decoration-none text-muted"
+                  >Lower Mid Face Endolift</a
+                >
+              </li>
+            </ul>
+          </div>
 
-    <section class="bg-main py-5" id="get-a-free">
-        <div class="container d-flex justify-content-center">
-            <div class="bg-white shadow p-5 col-lg-10 rounded-2">
-                <div class="row">
-                    <div class="col-lg-7 FadeUp">
-                        <div>
-                            <div class="fs-3 fw-bold my-3">Book a free consultation</div>
-                            <form action="#">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <label for="">First name*</label>
-                                        <input type="text" class="form-control border-0 bg-light">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label for="">First name*</label>
-                                        <input type="text" class="form-control border-0 bg-light">
-                                    </div>
-                                </div>
-                                <div class="row my-3">
-                                    <div class="col-lg-6">
-                                        <label for="">Email*</label>
-                                        <input type="text" class="form-control border-0 bg-light">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label for="">Phone number*</label>
-                                        <input type="text" class="form-control border-0 bg-light">
-                                    </div>
-                                </div>
-                                <label for="">Message*</label>
-                                <textarea name="" class="form-control border-0 bg-light" id=""></textarea>
+          <!-- Learn -->
+          <div class="col-lg-2 col-sm-6">
+            <h6 class="text-uppercase fw-bold mb-3 ps-0 ps-sm-2 ps-md-3">
+              Learn
+            </h6>
+            <ul class="list-unstyled text-muted small ps-0 ps-sm-2 ps-md-3">
+              <li class="mb-2">
+                <a href="FAQ.html" class="text-decoration-none text-muted"
+                  >FAQ</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="Trainings.html" class="text-decoration-none text-muted"
+                  >Trainings</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="Location.html" class="text-decoration-none text-muted"
+                  >Location</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="Meet-my-team.html"
+                  class="text-decoration-none text-muted"
+                  >Meet the Team</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="blog.html" class="text-decoration-none text-muted"
+                  >Blog</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="Book-free.html" class="text-decoration-none text-muted"
+                  >Book a Consultation</a
+                >
+              </li>
+            </ul>
+          </div>
 
-                                <a href="Treatements-detail4.html" class="btn btn-dark fw-semibold my-3">Upload
-                                    Image</a>
-                                <div class="mb-3">Accepted file types: jpeg, jpg, png, gif, Max. file size: 16 MB.</div>
-                                <a href="#" class="btn btn-dark fw-semibold my-3 d-block">Upload Image</a>
-                            </form>
-                        </div>
-                    </div>
+          <!-- Newsletter -->
+          <div class="col-lg-3 col-sm-6">
+            <h6 class="text-uppercase fw-bold mb-3">Newsletter</h6>
+            <p class="text-muted small">
+              Stay updated with the latest tips and exclusive offers.
+            </p>
 
-                    <div class="col-lg-5 FadeUp">
-                        <div>
-                            <div class="fs-3 fw-bold my-3">Types of Consultations</div>
-
-                            <div class="border-bottom py-3"><span
-                                    class="bg-black rounded-circle lh-1 text-white d-inline-block text-center align-content-center"
-                                    style="width: 20px; height: 20px;">1</span> <b>In Person</b>
-                                get all your questions answered face to face by an expert Endolift
-                                treatment specialist.</div>
-
-                            <div class="border-bottom py-3"><span
-                                    class="bg-black rounded-circle lh-1 text-white d-inline-block text-center align-content-center"
-                                    style="width: 20px; height: 20px;">2</span> <b>Phone</b> speak
-                                with an license professional over the phone</div>
-
-                            <div class="border-bottom py-3"><span
-                                    class="bg-black rounded-circle lh-1 text-white d-inline-block text-center align-content-center"
-                                    style="width: 20px; height: 20px;">3</span> <b>Facetime</b>
-                                Learn more about the Endolift process with a Facetime chat</div>
-
-                            <div class="border-bottom py-3"><span
-                                    class="bg-black rounded-circle lh-1 text-white d-inline-block text-center align-content-center"
-                                    style="width: 20px; height: 20px;">4</span> Receive a <b>
-                                    quote</b> and <b> treatment plan based</b> on your specific treatment
-                                goals </div>
-                        </div>
-                    </div>
-                </div>
+            <div
+              class="d-flex bg-white border rounded overflow-hidden shadow-sm"
+            >
+              <input
+                type="email"
+                class="form-control border-0 bg-transparent px-3"
+                placeholder="Enter your email"
+              />
+              <button
+                class="btn btn-dark px-3"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#enter-email"
+              >
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
             </div>
+
+
+            <h6 class="text-uppercase fw-bold mt-3">Contact</h6>
+            <p class="text-muted small" ><i style="font-size: 15px; height: 15px; width: 15px;" class="fa-solid fa-location-dot mx-2"></i>7500 NW 25th St, Ste 106, Miami, FL 33122</p>
+            <p class="text-muted small" ><i style="font-size: 15px; height: 15px; width: 15px;" class="fa-solid fa-phone mx-2"></i>(305) 398-4370</p>
+            <p class="text-muted small" ><i style="font-size: 15px; height: 15px; width: 15px;" class="fa-solid fa-envelope mx-2"></i>aesthetics@mynuceria.com</p>
+
+          </div>
         </div>
-    </section>
+      </div>
 
-    <section class="py-5">
-        <div class="container">
-            <div class="row align-items-center gap-lg-0 gap-md-0 gap-3">
-                <div class="col-lg-6 col-md-6 FadeUp">
-                    <div>
-                        <div class="bg-black pt-2 d-inline-block col-2"></div>
-                        <div class="fs-5">FAQ</div>
-                        <div class="fs-2 fw-bold">Top questions about Endolift Laser Skin Tightening Procedure
-                        </div>
-                        <p class="my-2">These answers will help teach you about our Endolift treatments. Explore the
-                            common questions about Endolift and the results you can achieve. For further information,
-                            contact us with your questions or book a free consultation with one of our expert.</p>
-                    </div>
-                    <a href="https://pay.withcherry.com/mynuceria?utm_source=practice&m=16434">
-                        <button class="bg-black text-main fw-semibold p-2 rounded-2 fs-sm border-0 px-3">Apply with
-                            Cherry</button>
-                    </a>
-                </div>
-
-
-                <div class="col-lg-6 col-md-6 FadeUp">
-                    <div>
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item border-0">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button border-bottom fw-semibold" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne">
-                                        What services do you offer at Endolift?
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body bg-black text-main">
-                                        We offer Endolift treatments designed to address a variety of cosmetic concerns,
-                                        including skin tightening, facial contouring, localized fat reduction, and
-                                        overall skin rejuvenation.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed border-bottom fw-semibold py-4"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                        aria-expanded="false" aria-controls="collapseTwo">
-                                        What is Endolift, and how does it work?
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body bg-black text-main">
-                                        <strong>This is the second item's accordion body.</strong> It is hidden by
-                                        default, until the collapse plugin adds the appropriate classes that we use to
-                                        style each element.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed border-bottom fw-semibold py-4"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse3"
-                                        aria-expanded="false" aria-controls="collapse3">
-                                        Am I a good candidate for Endolift?
-                                    </button>
-                                </h2>
-                                <div id="collapse3" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body bg-black text-main">
-                                        <strong>This is the second item's accordion body.</strong> It is hidden by
-                                        default, until the collapse plugin adds the appropriate classes that we use to
-                                        style each element.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item border-0">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed border-bottom fw-semibold py-4"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"
-                                        aria-expanded="false" aria-controls="collapse4">
-                                        How long does an Endolift session take?
-                                    </button>
-                                </h2>
-                                <div id="collapse4" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body bg-black text-main">
-                                        <strong>This is the second item's accordion body.</strong> It is hidden by
-                                        default, until the collapse plugin adds the appropriate classes that we use to
-                                        style each element.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+      <!-- Subscription Modal -->
+      <div class="modal fade" id="enter-email" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content p-4 text-center">
+            <button
+              type="button"
+              class="btn-close position-absolute end-0 top-0 m-3"
+              data-bs-dismiss="modal"
+            ></button>
+            <img
+              src="accets/images/Thank you.png"
+              width="80"
+              alt=""
+              class="mb-3"
+            />
+            <h5 class="fw-bold mb-2">Welcome to the Endolift Community</h5>
+            <p class="small text-muted">
+              Thank you for subscribing to our newsletter. We're excited to
+              share updates, offers, and expert guidance with you.
+            </p>
+          </div>
         </div>
-    </section>
+      </div>
 
-
-
-
-    <footer class="bg-main">
-        <div class="container py-5 px-lg-2 px-md-2 px-4">
-            <div class="row">
-                <div class="col-lg-3 col-md-10 mb-lg-0 mb-4">
-                    <div class="fw-bold fs-2 text-uppercase"><a href="Home.html">Endolift</a></div>
-                    <div>
-                        <i class="fa-brands fs-4 p-2 rounded-circle border fa-facebook"></i>
-                        <i class="fa-brands fs-4 p-2 rounded-circle border fa-square-instagram"></i>
-                        <i class="fa-brands fs-4 p-2 rounded-circle border fa-square-twitter"></i>
-                    </div>
-
-
-                </div>
-                <div class="col-lg-3 col-md-4 mb-lg-0 mb-4">
-                    <div class="fw-bold fs-5 mb-3 text-uppercase">TREATMENTS</div>
-                    <ul class="list-unstyled">
-                        <li class="my-2 fw-semibold"><a href="Treatments-detail1.html">Endolift Laser Skin Tightening
-                                Procedure</a></li>
-                        <li class="my-2 fw-semibold"><a href="Treatements-detail2.html">Under Chin Reduction
-                                Endolift</a></li>
-                        <li class="my-2 fw-semibold"><a href="Treatements-detail3.html">Mandibular Contour
-                                (Endolift)</a></li>
-                        <li class="my-2 fw-semibold"><a href="Treatements-detail4.html">Neck Endolift</a></li>
-                        <li class="my-2 fw-semibold"><a href="Treatements-detail5.html">Tummy Skin Tightening</a></li>
-                        <li class="my-2 fw-semibold"><a href="Treatements-detail6.html">Lower Eyelid Endolift</a></li>
-                        <li class="my-2 fw-semibold"><a href="Treatements-detail7.html">Under Arm Endolift</a></li>
-                        <li class="my-2 fw-semibold"><a href="Treatements-detail8.html">Lower Mid Face Endolift</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-4 mb-lg-0 mb-4">
-                    <div class="fw-bold fs-5 mb-3 text-uppercase">LEARN</div>
-
-                    <ul class="list-unstyled">
-                        <li class="my-2 fw-semibold"><a href="FAQ.html">FAQ</a></li>
-                        <li class="my-2 fw-semibold"><a href="Trainings.html">Trainings</a></li>
-                        <li class="my-2 fw-semibold"><a href="Meet-my-team.html">Meet the team</a></li>
-                        <li class="my-2 fw-semibold"><a href="blog.html">Blog</a></li>
-                        <li class="my-2 fw-semibold"><a href="Book-free.html">Book a free consultation</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-4 mb-lg-0">
-                    <div class="fw-bold fs-5 mb-3 text-uppercase">Newsletter</div>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="enter-email" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header border-0">
-                                    <button type="button" class="btn-close position-absolute end-0 mt-4 mx-3"
-                                        data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="text-center">
-                                        <img src="accets/images/Thank you.png" width="100" alt="">
-                                        <div class="fs-3 fw-bold my-4 lh-1">Welcome to the Endolift Community</div>
-                                        <div class="my-2">
-                                            Thank you for subscribing to our newsletter. We're thrilled to have you on
-                                            board and excited to share the latest news, exclusive offers, and expert
-                                            tips to help you achieve your wellness and aesthetic goals.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="d-flex align-items-center bg-black px-2 py-1 rounded-2">
-                        <input type="text" class="enter-email text-main form-control bg-transparent border-0"
-                            placeholder="Enter your email address">
-                        <i class="ms-2 fa-regular fa-paper-plane text-main pointer" data-bs-toggle="modal"
-                            data-bs-target="#enter-email"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class=" bg-main">
-            <div class="py-4 container fw-semibold border-top border-dark text-center">
-                © 2024 Quick N Easy. All Rights Reserved.
-            </div>
-        </div>
+      <!-- Footer Bottom -->
+      <div class="border-top mt-5 fw-bold pt-4 pb-3 text-center text-muted">
+        © 2024 Quick N Easy. All Rights Reserved.
+      </div>
     </footer>
 
-    <script src="accets/script.js"></script>
+  <script src="accets/script.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="accets/GSAP.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="accets/GSAP.js"></script>
 
-    <script>
-
-        $('.center').slick({
+  <script>
+    $(".center").slick({
+      centerMode: true,
+      centerPadding: "60px",
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
             centerMode: true,
-            centerPadding: '60px',
+            centerPadding: "40px",
             slidesToShow: 3,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        });
-    </script>
-
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: "40px",
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+  </script>
 </body>
 
 </html>
