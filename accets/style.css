@@ -556,7 +556,7 @@ position: absolute !important;
   content: "✓";
   position: absolute;
   left: 0;
-  color: #000;
+  color: #E1616B;
   font-weight: bold;
 }
 
@@ -590,7 +590,8 @@ position: absolute !important;
 }
 
 .gallery-image-container {
-  height: 240px;
+  height: 440px;
+  width: 440px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 }
@@ -599,11 +600,17 @@ position: absolute !important;
   transform: translateY(-5px);
 }
 
-.tall-image {
-  height: 100%;
-  min-height: 510px;
+.small-image{
+    height: 300px;
+  width: 300px;
+    transition: transform 0.3s ease;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
-
+.small-image:hover{
+   transform: translateY(-5px);
+}
 .object-fit-cover {
   object-fit: cover;
 }
@@ -677,6 +684,10 @@ position: absolute !important;
 }
 .faq_right{
   width: 75%;
+}
+
+.accordion-button{
+  border-radius: 30px !important;
 }
 .accordion-button:focus {
   box-shadow: none;
@@ -791,7 +802,8 @@ position: absolute !important;
 
 /* Review card */
 .review_card {
-  background-image: linear-gradient(to bottom, white, #FFE8E8);
+  background-color: #FFE8E8;
+  
 }
 
 .slick-dots li button:before {
@@ -802,7 +814,7 @@ position: absolute !important;
 
 footer{
 
-  background-image: linear-gradient(to top, #FFE8E8, transparent);
+  background-color: #fcefef;
 }
 
 footer .fw-bold.fs-2 a {
