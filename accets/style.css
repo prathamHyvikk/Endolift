@@ -571,18 +571,20 @@ position: absolute !important;
   transition: all 0.3s ease;
 }
 
-.btn-dark:hover {
+/* .btn-dark:hover {
   background-color: #333;
   transform: translateY(-2px);
+} */
+.btn-dark{
+  border-radius: 0px !important;
 }
-
 .btn-dark i {
   transition: transform 0.3s ease;
 }
 
-.btn-dark:hover i {
+/* .btn-dark:hover i {
   transform: translateX(3px);
-}
+} */
 
 .image-gallery {
   border-radius: 12px;
