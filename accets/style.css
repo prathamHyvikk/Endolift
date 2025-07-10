@@ -733,7 +733,7 @@ position: absolute !important;
 .card-number {
   width: 36px;
   height: 36px;
-  background-color: #000;
+  background-color: #E1616B;
   color: #fff;
   border-radius: 50%;
   display: flex;
@@ -985,12 +985,13 @@ height: auto;
 
 .treatment-info h5 {
   font-size: 23px;
-  font-weight: 600;
+  margin-bottom: 0;
+  font-weight: 900;
 }
 
 .treatment-info p {
   font-size: 16px;
-  margin: 0.4rem 0 0.8rem;
+  margin: 5px 0 30px;
   color: #6c757d ;
   flex-grow: 1; /* push the link to the bottom */
 }
