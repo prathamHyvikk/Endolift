@@ -34,11 +34,8 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   --fancy-glass: rgba(255, 255, 255, 0.4);
   --fancy-border: rgba(255, 255, 255, 0.2);
   --black-shade: #1b1c1c;
-     --theme-color: #f0dbe8;  /* Your soft pink theme */
-            --primary-color: #9e6b8b;  /* Muted purple that complements your theme */
-            --secondary-color: #d4a5c4; /* Lighter pink accent */
-            --text-color: #4a4a4a;
-            --dark-accent: #6d466b;
+     
+           
 }
 
 .heading-fonts{
@@ -930,9 +927,9 @@ footer .text-center {
 /* Treatment Page */
 .treatment_banner{
  
-width: 500px;
+width: 600px;
 height: auto;
- 
+ margin-top: -50px;
 
 }
 
@@ -1011,7 +1008,7 @@ height: auto;
 /* Treatment - 6 */
   .benefits-section {
             padding: 80px 0 0px;
-            background-color: rgba(240, 219, 232, 0.2); /* Very light theme tint */
+            background-color: #fff8f8; /* Very light theme tint */
         }
         
    
@@ -1032,15 +1029,15 @@ height: auto;
             padding: 30px;
             box-shadow: 0 5px 15px rgba(158, 107, 139, 0.08);
             transition: all 0.3s ease;
-            border: 1px solid rgba(240, 219, 232, 0.5);
+            border: 1px solid #E1616B;
             position: relative;
             overflow: hidden;
         }
         
         .benefit-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(158, 107, 139, 0.12);
-            border-color: var(--secondary-color);
+            box-shadow: 0 8px 10px #E1616B;
+            border-color: #E1616B;
         }
         
         .benefit-card:before {
@@ -1061,7 +1058,7 @@ height: auto;
         .icon-wrapper {
             width: 50px;
             height: 50px;
-            background-color: rgba(240, 219, 232, 0.3);
+            background-color: #e1616b21;
             border-radius: 50%;
             display: flex;
             align-items: center;
