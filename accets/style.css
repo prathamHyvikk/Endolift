@@ -931,8 +931,12 @@ width: 600px;
 height: auto;
  margin-top: -50px;
 
-}
+ 
 
+}
+.treatment_banner img{
+  margin-left: 100px !important;
+}
 .lead {
   font-size: 1.1rem;
   line-height: 1.7;
